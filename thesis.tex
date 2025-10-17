@@ -1,0 +1,48 @@
+\documentclass[master=cws,english]{kulemt}
+\newcommand\myworries[1]{\textcolor{red}{#1}}
+
+% === Thesis info ===
+\setup{
+  title={PISA-Booster: A software tool to accelerate math learning through self-assessment training},
+  author={Naten Kindekens},
+  promotor={Prof.\,dr.\,Tom Schrijvers},
+  assessor={Prof.\,dr.\,[Naam Assessor]},
+  assistant={Prof.\,dr.\,Tom Schrijvers},
+}
+
+
+% === PDF and hyperlink setup ===
+\usepackage[pdfusetitle,colorlinks,plainpages=false]{hyperref}
+
+\begin{document}
+
+% === Preface (optional, can remove later) ===
+\begin{preface}
+  I would like to thank everyone who supported me throughout this thesis process,
+  especially my promoter and co-promoter for their guidance.
+\end{preface}
+
+% === Table of contents ===
+\tableofcontents*
+
+% === Abstract (required) ===
+\begin{abstract}
+This thesis explores how child-driven personalization in arithmetic learning applications
+can foster metacognitive awareness and improve mathematical performance.
+A prototype web application will be developed to experimentally test this concept.
+\end{abstract}
+
+
+% === Main content ===
+\mainmatter
+
+\include{chapters/introduction}
+\include{chapters/literature_review}
+
+
+% === Bibliography ===
+\backmatter
+\bibliographystyle{abbrv}
+\bibliography{references}
+
+\end{document}
