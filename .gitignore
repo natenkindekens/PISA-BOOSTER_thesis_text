@@ -8,5 +8,9 @@ thesis.out
 thesis.synctex.gz
 thesis.toc
 thesis.pdf
+p.aux
+pr.aux
+thesis.run.xml
 chapters/introduction.aux
 chapters/literature_review.aux
+chapters/problem_statement.aux
