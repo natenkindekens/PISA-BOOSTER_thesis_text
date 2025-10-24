@@ -4,13 +4,11 @@
 \section{Introduction}
 The integration of software tools into education is far from new. Over the past fifteen years, digital technologies have become an essential component of teaching and learning at all educational levels.
 Some researchers have even described the overwhelming increase of educational software as a kind of \textit{digital pandemic} \cite{dancsa_digital_2023}.
-From blended learning environments and AI-powered assistants sush as ChatGPT and GitHub Copilot, to interactive applications in primary schools like Automatus \cite{automatus} or MathGarden \cite{rekentuin}, the role of software in education has grown rapidely. \\
-
+From blended learning environments and AI-powered assistants sush as ChatGPT and GitHub Copilot, to interactive applications in primary schools like Automatus \cite{automatus} or MathGarden \cite{rekentuin}, the role of software in education has grown rapidely. \\ \\
 However, the notion of a "good" educational software tool remains somewhat vague and often controversial. 
-This abundance has motivated many studies aiming to evaluate the impact of educational technology on learning outcomes and to explore how such tools can be improved. \\
-
+This abundance has motivated many studies aiming to evaluate the impact of educational technology on learning outcomes and to explore how such tools can be improved. \\ \\
 In this chapter, we review existing approaches and software tools that aim to support mathematics education and self-assessment. 
-We discuss what has been found to work well, where limitations remain, and how these insights inform the development of our own tool, "PISA-Booster". 
+We discuss what has been found to work well, where limitations remain, and how these insights inform the development of our own tool, \textit{PISA-Booster}. 
 Because education is deeply connected to psychological and cognitive processes, we first introduce key theoretical concepts that are relevant to understanding how learners interact with educational software.
 These include principles from metacognition, \myworries{HIER NOG ANDERE PRINCIPLES}
 
@@ -19,19 +17,18 @@ These include principles from metacognition, \myworries{HIER NOG ANDERE PRINCIPL
 Children's arithmetic learning is influenced by a wide range of cognitive mechanisms.
 Broadly these can be divided into two major categories: \textit{domain-specific} cognitive factors and \textit{domain-general} cognitive factors (such as studied by Geary \& Moore, 2016 \cite{geary_chapter_2016} and Vanbist \& De Smedt, 2016 \cite{vanbinst_chapter_2016})
 Domain-specific factors refer to skills that are directly tied to numerical processing, such as symbolic numerical magnitude \myworries{LEESTEKEN} the ability to understand and compare quantitites. 
-In contrast, domain-general cognitive factors (DGCFs) include processes that are not specific to mathematics but support learning across domains, such as working memory, inhibition, shifting and metacognition. \\
-
+In contrast, domain-general cognitive factors (DGCFs) include processes that are not specific to mathematics but support learning across domains, such as working memory, inhibition, shifting and metacognition. \\ \\
 Recent research highlights the importance of both categories in predicting mathematical performance.
 For instance, Bellon et al. \cite{bellon_more_2019} demonstrated that arithmetic achievement in primary school children is best explained by a combination of domain-specific and domain-general factors, particulary metacognitive monitoring and executive functions such as updating. 
 
 \subsubsection{Metacognition and Its Role in Arithmetic Learning}
 Metacognition was first introduced by Flavell (1979) \cite{flavell_metacognition_1979} as \textit{"thinking about thinking"} and later defined by Brown (1987) \cite{brown_metacognition_1987} to be the awareness and regulation of one's own cognitive processes.
 It is often conceptualized as a set of skills that include \textit{planning}, \textit{monitoring} and \textit{evaluating} one's performance (Wang et al. 2021 \cite{wang_skill_2021}).
-Planning invloves setting strategies and identifying how to reach a goal; monitoring refers to tracking one's understanding and progress; and evaluating involves judging the effectiveness of one's approach after completing a task.\\
+Planning invloves setting strategies and identifying how to reach a goal; monitoring refers to tracking one's understanding and progress; and evaluating involves judging the effectiveness of one's approach after completing a task.\\ \\
 A growing body of research demonstrates that these metacognitive skills are positively related to mathematics performance across age groups and educational contexts (Bellon et al. 2019 \cite{bellon_more_2019}, Wang et al. 2021 \cite{wang_skill_2021}, Fu et al. 2024 \cite{fu_relationship_2025}, Xie et al. 2024 \cite{xie_meta_2024}).
 For example, Bellon et al. (2019) \cite{bellon_more_2019} found that metacognitive monitoring uniquely predicted arithmetic accuracy in primary school children.
 Similary, Rinne et al. (2014) \cite{rinne_knowing_2014} showed that children who were better judging their answers, knowing they were right or wrong in mental arithmetic, demonstrated stronger long-term gains in arithmetic accuracy.
-This highlights the role of metacognitive monitoring as a mechanism through which learners detect and learn from their errors.\\
+This highlights the role of metacognitive monitoring as a mechanism through which learners detect and learn from their errors.\\ \\
 Large-scale and meta-analytic studies confrirm the robustness of this relationship.
 A recent study involing over 46,000 Chinese eight-grade students revealed that metacognitive skills such as planning, monitoring and evaluation were significantly correlated with mathematics achievement ($r = .299$, $p < 0.01$), with planning showing the strongest association (Fu et al. (2025) \cite{fu_relationship_2025}).
 Consistent with this, a meta-analysis by Xie et al. (2024) \cite{xie_meta_2024} reported a strong correlation ($r = 0.32$) between metacognition and mathematical achievement across all educational levels, from preschool to university.
@@ -46,7 +43,43 @@ This insight provides a strong pedagogical motivation for developing an educatio
 
 
 \subsection{Psychological factors in Digital Learing Environments}
+\myworries{sowieso iets met motivation -> gamification!}
 \subsection{Integration: Linking Cognititve and Motivational Perspectives}
 \section{State of the Art in Digital Arithmetic Learning Tools}
+In recent years, a wide range of digital tools has been developed to support the teaching and learning of arithmetic. These platforms aim to make mathematics more accessible, adaptive, and engaging by leveraging interactive exercises, gamification, and immediate feedback. Applications sush as \textit{Automatus} \cite{automatus}, \textit{Rekentuin (MathGarden)} \cite{rekentuin}, \textit{Khan Academy} \cite{khan_academy_2025}, and \textit{Prodigy Math} \cite{prodigy_math} are now widely used in both classroom and home settings, often forming part of blenden learning programs. Their success demonstrates the potential of technology to stimulate motivation and provide individualized learning experiences that are difficult to achieve through traditional instruction alone.\\ \\
+However, while these systems effectively train basic arithmetic fluency and procedural accuracy, their design is hardly ever based on metacognitive theory. Features sush as adaptive difficulty adjustment, progress tracking, or performance feedback primarily target performances outcomes than learners' self-awareness or strategic regulation. Although some platforms allow learner control --- for instance, by letting students select the topic or level of exercises --- they do not employ genuine metacognitive prompting to stimulate reflection or self-assessment. 
+Consequently, the metacognitive dimension of arithmetic learning remains underrepresented in most current systems.\\ \\
+The following subsections present a selection of the most prominent arithmetic learning tools. 
+For each platform, we describe its main features, target audience, and pedagogical approach, followed by a critical reflection on how (and to what extent) it supports metacognitive development. 
+This analysis will highlight existing gaps and motivate the design goals of the \textit{PISA-Booster} application, which seeks to integrate metacognitive principles more explicitly into the digital learning experience.
+
 \subsection{Overview of Prominent Tools}
+\subsubsection{Automatus}
+\textit{Automatus} is a Flemish adaptive arithmetic training platform designed to help primary school children automate basic operations through repeated and times practice. Its main pedagogical goal is to improve arithmetic fluency, ensuring that fundamentel operations such as addition, subtraction, multiplication, and division can be performed quickly and automatically, freeing cognitive resources for higher-level problem solving. The importance of developing such automaticity has been widely emphasized in mathematics education research, as fluent retrieval of basic facts reduces working memory load and enables more efficient problem solving in complex tasks (Baker et al. \cite{baker_importance_2018}). The platform is explicitly described as an \textit{automation} tool rather than a learning tool: it assumes that learners already understand the basic concepts before using the software.\\ \\
+Automatus employs adaptive difficulty adjustment and personal goal times to customize exercises to each learner's current proficiency level. Students work in a cooperative, gamified environment where they "conquer tiles" by meeting speed targets, collectively progressing through an exercise world. This design introduces elements of competition and collaboration that sustain motivation and engagemet during repetitive drills. Teachers, in turn, can monitor progress via a dashboard that provides detailed insisghts into student performance and improvement over time.\\ \\
+From a psychological perspective, Automatus focuses primarily on the domain-specific cognitive factors of arithmetic fluency rather than on the domain-general processes such as metacognition or self-regulation. Its adaptivity supports individualized pacing, which can enhance motivation and perceived competence. However, the feedback structure remains largely performance-oriented emphasizing speed and accuracy rather than self-reflection or accuracy evaluation. As such, while the platform effectively supports procedural automatization and motivation through gamification, it provides limited opportunities for learners to plan, monitor, or evaluate their own learning strategies.
+\subsubsection{Rekentuin (MathGarden)}
+\textit{Rekentuin} is an adaptive, game-based arithmetic learning environment developed by Prowise learn for primary education. The platform enables independent arithmetic practice across a wide range of topics, including basic operations, fractions, time, money, and world problems. With over 70,000 exercises organized into 28 games, Rekentuin offers continuous and varied practice aligned with national curriculum objectives. Its design targets not only procedural fluency but also sustained motivation and engagement. \\ \\
+The system employs aritificial intelligence to adapt the difficulty of each task in real time, maintaining an optimal success rate of approximately 70\% correct repsonses. This adaptivity ensures that exercises remain challenging but achievable, supporting learners' perceived competence and intrinsic motivation. Each learner navigates through a themed "math garden" (see figure \ref{fig:rekentuin_menu}) consisting of islands and games, where they can earn coins by completing exercises within time limits. These coins can be used to personalize avatars, introducing a layer of gamified feedback and self-expression. Teachers can monitor individual and class performance through a dashboard that links progress directly to learning goals, allowing for targeted instruction and differentiation.\\ \\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{figures/rekentuin.png}
+  \caption[Main menu of \textit{Rekentuin}]
+  {Main menu of \textit{Rekentuin}, showing the thematic “math garden” with islands representing different arithmetic games. 
+  Each island corresponds to a mathematical domain, and players earn coins to personalize their avatar as they complete exercises.}
+  \label{fig:rekentuin_menu}
+\end{figure}
+From a psychological standpoint, Rekentuin integrates several factors known to influence learning in digital environments, including adaptive feedback, goal orientation, and motivational reinforcement through gamification. Unlike \textit{Automatus}, which focuses mainly on the automation of basic arithmetic facts, Rekentuin also incorporates a broader range of mathematical topics and provides a richer learning context. However, similar to other adaptive drill-based systems, the primary emphasis remains on performance outcomes: speed, accuracy, and progression, rather than explicit metacognitive reflection or strategy awareness.\\ \\
+Empirical research supports the effectiveness of Rekentuin in improving arithmetic fluency. In a controlled study, Meijer and Karssen (2013) \cite{meijer_effecten_nodate} found positive effects of Rekentuin participation on nearly all subtest of a standerized tempo test for arithmetic automatization, particulary for addition and subtraction. Students using Rekentuin demonstrated greater improvements in speed and accuracy compared to control groups. Interestingly, while the platform enhanced performance, some results also indicated potential increases in math anxiety and lower self-perception during the intervention period, although these differences diminished by the final measurement. The study also explored supplementary features such as working memory training and feedback mechanisms, finding mixed and inconsistent results. Nonetheless, the overall findings suggest that adaptive digital environments like Rekentuin can significantly contribute to arithmetic fluency development, especially when combined with effective classroom instruction. \\ \\
+In sum, Rekentuin represents a more comprehensive adaptive environment than purely automatization-focused platforms. Its integration of AI-based adaptivity, motivational design, and teacher analytics positions it as an effective tool for differentiated arithmetic practice. However, like other systems in this category, it primarily reinforces procedural fluency and motivation, leaving room for further development in strengthen metacognitive engagement and self-assessment.
+
+
+
+
+\subsubsection{Khan Academy}
+\textit{Khan Academy} is an American non-profit educational platform founded by Salman Khan in 2008, designed to make high-quality learning resources freely accessible to learners worldwide. Initially focussed on mathematics, the platform now offers over 10,000 video lessons, interactive exercises, and teacher support tools across multiple domains including science, history, and computer science. The learning model of Khan Academy is based on \textit{mastery learning} and \textit{self-paced progression}, allowing learners to advance only after achieving proficiency in prerequisite topics. This approach supports individual learning trajectories and accommodates differences in students' prior knowledge and pace.\\ \\
+A key pedagogical innovation of Khan Academy lies in its support for \textit{flipped classroom} and \textit{blended learning} models. Studens engage with video lectures and exercises independently, while classroom time can be devoted to discussion, remediation, and individualized guidance. The platform’s analytics allow teachers to track progress, identify conceptual gaps, and provide targeted feedback. This integration of data-driven insights with teacher mediation creates opportunities for adaptive and personalized instruction at scale.\\ \\
+From a motivational standpoint, Khan Academy incorporates gamified elements such as badges, energy points, and progress dashboards.
+\subsubsection{Math Prodigy}
+
 
