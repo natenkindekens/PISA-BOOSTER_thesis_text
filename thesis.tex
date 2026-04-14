@@ -3,7 +3,7 @@
 
 % === Thesis info ===
 \setup{
-  title={PISA-Booster: A software tool to accelerate math learning through self-assessment training},
+  title={RekenRangers: A configurable arithmetic learning tool designed for classroom use and educational research},
   author={Naten Kindekens},
   promotor={Prof.\,dr.\,Tom Schrijvers},
   assessor={Prof.\,dr.\,[Naam Assessor]},
@@ -15,7 +15,7 @@
 \usepackage[pdfusetitle,colorlinks,plainpages=false]{hyperref}
 \usepackage{float}
 \usepackage[most]{tcolorbox}
-
+\usepackage[numbers]{natbib}
 
 \begin{document}
 
@@ -38,10 +38,18 @@ A prototype web application will be developed to experimentally test this concep
 
 % === Main content ===
 \mainmatter
-
+\include{chapters/acronyms_and_symbols}
 \include{chapters/introduction}
-\include{chapters/literature_review}
+\include{chapters/background_and_motivation}
+\include{chapters/exercise_tools}
 \include{chapters/problem_statement}
+\include{chapters/experiment}
+\include{chapters/rekenrangers}
+\include{chapters/experimental_setup}
+\include{chapters/results}
+\include{chapters/discussion}
+\include{chapters/conclusion_and_further_work}
+
 
 
 % === Bibliography ===

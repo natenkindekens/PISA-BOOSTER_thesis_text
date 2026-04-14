@@ -1,16 +1,50 @@
+% !TeX root = ../thesis.tex
 \chapter{Problem Statement}
 
-In recent years, numerous digital tools have been developed to support arithmetic learning in primary education. Platforms such as \textit{Automatus}, \textit{Rekentuin}, and \textit{Prodigy Math} have successfully demonstrated how adaptive practice and gamified environments can increase motivation and engagement in mathematics. However, despite their success in promoting practice and fluency, these systems are primarily designed around performance-based repetition and extrinsic rewards. \\ \\
-While such approaches improve speed and accuracy, they often overlook an essential aspect of learning — the development of metacognitive skills. Metacognition, or the ability to reflect on and regulate one’s own thinking, has been shown to play a critical role in arithmetic learning and long-term academic achievement \cite{bellon_more_2019, wang_skill_2021, flavell_metacognition_1979}. Yet, current digital learning environments rarely include features that actively strenghtens metacognitive awareness, self-assessment, or reflection on performance. This gap limits the potential of educational technology to support deeper learning and self-regulated development in young learners.
-\begin{tcolorbox}[colback=gray!5!white, colframe=gray!70!black, title=\textbf{Problem}]
-Most existing digital mathematics learning tools focus primarily on adaptive practice and performance-based gamification. 
-They do not explicitly incorporate metacognitive components such as self-assessment, reflection, or awareness of learning progress.
-As a result, children may improve in arithmetic fluency without developing the metacognitive insight necessary for independent, self-regulated learning.
+In recent years, many digital tools have been developed to support arithmetic
+learning in primary education. Platforms such as \textit{Automatus},
+\textit{Rekentuin}, and \textit{Prodigy Math} have shown that adaptive practice
+and gamification can increase motivation and improve arithmetic fluency. At the
+same time, researchers studying arithmetic learning rely on controlled experiment
+software such as OpenSesame \cite{mathot_opensesame_2012} to run their studies.
+
+The problem is that these two worlds do not connect well. Classroom tools are not
+built for research: they offer little control over experimental conditions and do
+not collect the data that researchers need. Research tools, on the
+other hand, are not built for classrooms: they require technical knowledge to set
+up, look unappealing, and have no gamification or story. This makes it hard to
+keep children motivated across multiple sessions, which directly affects the
+quality of the research.
+
+This matters because educational research depends on ecological validity. A child
+who loses motivation after two sessions, or who is distracted by an unfamiliar and
+ugly interface, is not a reliable research participant. Right now, researchers are
+forced to choose between methodological control and motivational design, even
+though both are necessary.
+
+\begin{tcolorbox}[colback=red!5!white, colframe=red!60!black, title=\textbf{Problem}]
+Existing digital arithmetic tools serve either classroom practice or controlled
+research, but not both. Classroom tools lack the configurability and data
+collection needed for research. Research tools lack the motivational design
+needed to keep children engaged across multiple sessions. This forces
+researchers to compromise on either scientific rigour or ecological validity.
 \end{tcolorbox}
-\begin{tcolorbox}[colback=gray!5!white, colframe=gray!70!black, title=\textbf{Goal}]
-\textbf{Design and develop a digital tool to accelerate arithmetic learning through self-assessment and metacognitive support.} 
-The goal of this thesis is to create an interactive and adaptive web application that combines engaging arithmetic practice with elements that stimulate metacognitive awareness. 
-By integrating reflective feedback, confidence judgments, and personalized progress tracking, the tool aims to help children not only practice arithmetic efficiently but also \textbf{understand how they learn and evaluate their own performance.}
-The final design should demonstrate how metacognitive components can be implemented in a child-friendly, motivating, and educationally effective environment.
+
+\begin{tcolorbox}[colback=blue!4!white, colframe=blue!40!black, title=\textbf{Goal}]
+\textbf{Design, develop, and evaluate a web-based arithmetic learning platform
+that works for both classroom use and educational research.}
+The platform, RekenRangers, combines a gamified and child-friendly environment
+with the configurability needed for controlled experiments. Features such as
+metacognitive self-assessment prompts, adaptive difficulty, timer settings, and
+structured exercise sequences can all be configured by a teacher or researcher
+without any programming knowledge. The tool is evaluated in two ways:
+quantitatively, by replicating an existing study on metacognition in arithmetic
+to check whether the tool produces results consistent with controlled research
+software; and qualitatively, by surveying teachers, researchers, and students
+on the usability and motivation the platform offers.
 \end{tcolorbox}
-The proposed solution will therefore not compete with existing adaptive tools but complement them by focusing on the learner’s internal cognitive processes rather than external rewards. In doing so, this work aims to contribute to the development of next-generation educational technologies that promote both cognitive performance and metacognitive growth in mathematics learning.
+
+RekenRangers is not meant to replace existing classroom tools or research
+software. The goal is to fill the gap between them --- a platform that is
+both engaging enough to keep children motivated, and flexible enough to support
+meaningful research.
