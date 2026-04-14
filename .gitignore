@@ -8,9 +8,15 @@ thesis.out
 thesis.synctex.gz
 thesis.toc
 thesis.pdf
+thesis.acn
+thesis.glo
+thesis.glsdefs
+thesis.ist
 p.aux
 pr.aux
 thesis.run.xml
 chapters/introduction.aux
 chapters/literature_review.aux
+chapters/problem_statement.
+chapters/symbols_and_abbr.aux
 chapters/problem_statement.aux
