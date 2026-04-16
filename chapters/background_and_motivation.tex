@@ -29,7 +29,7 @@ Understanding which factors drive these differences, and how they interact acros
 development, remains an open and active research question. Researchers at KU 
 Leuven have been prominent contributors to this effort: work by Bellon, Fias, and 
 De Smedt has shed light on the role of metacognitive monitoring in arithmetic 
-achievement (\cite{bellon_more_2019} \cite{bellon2020} \cite{bellon2021}) while Vanbinst and De Smedt 
+achievement \cite{bellon_more_2019, bellon2020, bellon2021} while Vanbinst and De Smedt 
 have investigated how individual differences in numerical magnitude processing 
 relate to arithmetic development \cite{vanbinst2016}. These are not isolated 
 efforts. Similar questions are being pursued by research groups across the 
@@ -48,6 +48,81 @@ for everything that follows.
 
 \section{What a good research tool needs}
 
+Before looking at what is currently available, it is worth being precise about 
+what we are actually looking for. The previous section established that 
+arithmetic research in primary school children is an active field with real 
+scientific stakes. But good research questions can only produce good answers 
+if the tools used to collect the data are up to the job. This section defines 
+what that means in practice.
+
+The six properties described below were developed through a combination of 
+discussions with researchers in the field and a close reading of how existing 
+tools are evaluated in the literature on experimental software for educational 
+psychology \cite{peirce_psychopypsychophysics_2007,mathot_opensesame_2012}. They are not 
+claimed to be exhaustive, but together they capture the core requirements 
+that a tool must meet if it is to support rigorous, classroom-based research 
+with children. Each property is introduced and briefly motivated here; the 
+question of how well existing tools satisfy them is taken up in the following 
+section.
+
+\subsection*{Data Tracking}
+The most basic requirement of any research tool is that it records what 
+happens. In arithmetic research this means logging not just whether a child 
+answered correctly, but also the response time, the exact answer given, the 
+confidence rating if applicable, and the precise timestamp of each event. 
+Without clean, structured, and complete data, no analysis is possible. This 
+sounds obvious, but in practice many tools either do not log enough detail, 
+make the export process cumbersome, or produce formats that require extensive 
+preprocessing before they can be used. A good research tool must make data 
+collection automatic, complete, and straightforward to access.
+
+
+\subsection*{Experimental control}
+Research designs in educational psychology typically involve comparing groups 
+under different conditions. For example, children who receive metacognitive 
+prompts versus those who do not. To draw valid conclusions from such a 
+comparison, the researcher must be able to control precisely what each group 
+sees and experiences. This includes controlling the type of exercises 
+presented, the order in which they appear, which items are excluded, whether adaptive difficulty is active or not, and so on. Without this level of control, 
+confounding variables (an outside, often hidden, third variable) creep in and the internal validity of the study is 
+compromised \cite{shadish2002experimental}.
+
+\subsection*{Reproducibility}
+A finding is only scientifically meaningful if it can be replicated. For a 
+tool to support reproducible research, it must be possible to save the 
+complete configuration of an experiment --- every setting, every parameter, 
+every exclusion rule --- and to share that configuration with other 
+researchers so they can run the exact same study. This is closely tied to 
+broader discussions in the open science community about transparency and 
+replication, and it is a property that is surprisingly difficult to satisfy 
+in practice: many existing tools rely on custom scripts or local configuration 
+files that are hard to version, share, or reconstruct after the fact.
+
+\subsection*{Flexibility}
+A research tool is rarely used for a single study. Research groups run experiments over years, test new hypotheses, and adapt existing paradigms to new age groups or populations. What worked as a one-off protocol for a study on metacognitive monitoring may need to be reconfigured two years later with a different task, a new control condition, or an extended session structure. A good research tool must therefore make it possible to run not just one experiment, but many. And to modify or extend an existing setup without having to rebuild the tool from scratch.\\ \\
+In practice, this means that the parameters a researcher is likely to vary between studies need to live outside the source code. The type of exercises, the number of trials, the timing windows, the inclusion of metacognitive prompts, the adaptive difficulty model, and the exclusion rules should all be configuration options, not hard-coded assumptions. If these aspects are built directly into the code, it does not just make things inconvenient. In some cases, it can make it impossible to set up the experiment in the way the researcher needs. This turns hard-coded choices into real limitations on the study design. That is why it is essential to keep these elements flexible and configurable.\\ \\
+
+\subsection*{Reliability}
+Reliability is the property that is easiest to take for granted and most damaging to lose. A research tool is reliable when it behaves the same way for every participant, every session, every time. Timings are accurate, inputs are captured without loss, the interface does not stutter at unpredictable moments, and a crash during session three of a four-session study does not destroy the data from sessions one and two. None of this is optional. The moment a tool becomes unreliable, the data it produces becomes hard to interpret: was that slow response time a real cognitive effect, or was the screen just slow to refresh that trial?\\ \\
+The concern is not theoretical. Millisecond-scale timing errors in commonly used experimental equipment have been documented as a plausible contributor to replication failures in reaction-time research \cite{plant2013millisecond}. In an arithmetic study where the difference between a retrieved arithmetic fact and a calculated answer can be a few hundred milliseconds, a tool whose timing drifts is a tool that can no longer distinguish the effects it is meant to measure.\\ \\
+Reliability also has a second dimension: the tool should simply keep working across the full duration of a study. Classroom research typically involves multiple sessions spread over days or weeks, running on hardware the researcher does not control — the school's laptops, the tablets in the library, a mix of browsers on a mix of operating systems. A tool that works perfectly on the researcher's development machine but fails intermittently in the wild is, for practical purposes, unreliable. A good research tool must therefore be both precise (its measurements are trustworthy) and robust (it keeps running under conditions that are not ideal).
+
+\subsection*{Ease of setup}
+The final property follows directly from the previous five. A tool can log every relevant event, offer complete experimental control, support reproducibility, allow flexible reconfiguration, and run reliably — and still be unusable if setting it up takes three weeks and a degree in computer science. The researchers who drive the field are, with few exceptions, not software engineers. If the tool they are meant to use assumes otherwise, there are really only two outcomes: either studies get delayed while someone else writes the experiment, or the study gets reshaped to fit what is easy to implement rather than what the research question actually requires.\\ \\
+But ease of setup is more than the absence of programming. It includes the whole experience of getting from "I want to run this study" to "the first child is doing the first exercise." Can the researcher tell, by looking at the interface, what each setting does? Is the navigation between configuration screens clear enough that a teacher could manage it during a short training session? When something is misconfigured, does the tool flag the problem before a classroom full of children is already logged in? These are standard concerns in user interface design, and cognitive load theory in particular has shown that interfaces which impose high extraneous load — clutter, ambiguous controls, inconsistent layout — measurably degrade the user's ability to complete their task \cite{darejeh2024cognitive}. For a research tool, that degradation translates directly into misconfigured studies and wasted sessions.\\ \\
+A good research tool must therefore be designed for the people who will actually use it. That means visual clarity, predictable behaviour, sensible defaults, and enough guidance built into the interface that a researcher or teacher can configure a study without needing a separate manual open on the side.
+
 \section{Current research tools and their limitations}
+
+With a clear picture of what a good research tool needs to do, the next step is to look at what researchers actually have on their desks today. Several tools have become standard in the educational psychology community, and most arithmetic studies published in the last decade have used one of them. This section walks through the two most prominent — OpenSesame \cite{mathot_opensesame_2012} and PsychoPy \cite{peirce2019psychopy2} — and examines how each of them fares against the six properties introduced in Section 2.2. Both tools have been carefully designed, are actively maintained, and have earned their place in the field. The point of this section is not to argue that they are bad tools; it is to show that even the best tools currently available leave a specific kind of gap, and that this gap becomes critical the moment a study leaves the controlled lab and moves into a classroom.\\ \\
+The discussion starts with OpenSesame, then turns to PsychoPy, briefly acknowledges the broader landscape of alternatives, and ends by drawing out the limitations that all of these tools share. That final discussion is what motivates the shift in direction taken in Chapter 3.
+
+\subsection{OpenSesame}
+
+\subsection{PsychoPy}
+
+\subsection{Other tools in the landscape}
+
+\subsection{Shared limitations}
 
 \section{Why this matters: the cost of a bad research tool}
