@@ -48,3 +48,45 @@
 %software. The goal is to fill the gap between them --- a platform that is
 %both engaging enough to keep children motivated, and flexible enough to support
 %meaningful research.
+
+Chapters 2 and 3 approached the same gap from two directions. Chapter 2 showed that the research tools available today offer strong scientific foundations but create experiences that are unsuitable for children in a classroom. Chapter 3 showed that the exercise tools children already use deliver exactly the kind of engaging, adaptive, child-friendly experience that research tools lack, but fall short on the data tracking, experimental control, and flexibility that researchers need.\\ \\
+Figure~\ref{fig:full-grid} made this visible as a single image. The grid splits cleanly in two. No existing tool fills both halves. Researchers who want to run a controlled arithmetic study in a classroom are forced to choose: either they use a research tool and accept that the children will be staring at a black screen with no motivation, no story, and no adaptivity, or they use a classroom tool and accept that they cannot control the experimental conditions, cannot collect fine-grained data, and cannot structure the study the way their research design requires.
+
+\begin{tcolorbox}[
+    colback=red!5!white,
+    colframe=red!70!black,
+    title=Problem
+]
+There is currently no digital arithmetic tool that combines the engagement, adaptivity, and child-friendly design of classroom exercise tools with the data tracking, experimental control, and configurability of controlled research software. Researchers studying arithmetic development in children are forced to compromise on either scientific rigour or ecological validity, which directly affects the quality of the data their studies produce.
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+    colback=blue!4!white,
+    colframe=blue!40!black,
+    title=Goal
+]
+Design, develop, and evaluate a web-based arithmetic learning platform that satisfies both the exercise-tool properties and the research-tool properties identified in this thesis. The platform should combine a gamified, child-friendly environment with the configurability needed for controlled experiments, and it should be operable by teachers and researchers through a graphical interface without any programming knowledge. The tool should be usable both as a regular classroom exercise tool and as a research instrument, so that children can become familiar with the platform before participating in a study, and so that findings from research can flow back into classroom practice.
+
+The tool is evaluated in two ways:
+
+\begin{enumerate}
+    \item \textbf{As a research tool}, by replicating an existing study on metacognitive monitoring in arithmetic \cite{bellon_more_2019} to test whether the platform produces results consistent with those obtained using traditional research software.
+    \item \textbf{As an exercise tool}, by surveying children, teachers, and researchers on the usability, engagement, and configurability the platform offers.
+\end{enumerate}
+\end{tcolorbox}
+
+\noindent These two evaluation strategies lead to the following research questions:\\ \\
+
+\begin{tcolorbox}[
+    colback=green!5!white,
+    colframe=green!50!black,
+    title=Research Questions
+]
+\begin{enumerate}
+    \item[\textbf{RQ1}] Can a single web-based platform satisfy both the exercise-tool properties (adaptivity, engagement, feedback, personalisation, accessibility, user friendliness) and the research-tool properties (data tracking, experimental control, reproducibility, flexibility, reliability, ease of setup) identified in Chapters 2 and 3?
+    \item[\textbf{RQ2}] Does the platform, when configured to replicate the experimental setup of Bellon et al. \cite{bellon_more_2019}, produce results on metacognitive monitoring in arithmetic that are consistent with those obtained using traditional research software?
+    \item[\textbf{RQ3}] How do children, teachers, and researchers evaluate the usability, engagement, and configurability of the platform?
+\end{enumerate}
+\end{tcolorbox}
+
+\noindent RQ1 is a design question: it asks whether the twelve properties can coexist in a single tool, and it is answered through the design and implementation described in Chapter 6. RQ2 is an empirical question: it tests whether the tool works as a research instrument by comparing its output against an established baseline. RQ3 is a qualitative question: it captures whether the tool delivers on its promise from the perspective of the people who would use it. Together, these three questions cover the full scope of the thesis. The experimental setup for RQ2 and RQ3 is described in Chapter 7, and the results are presented in Chapter 8.
