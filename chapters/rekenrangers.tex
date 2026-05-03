@@ -1,6 +1,48 @@
 % !TeX root = ../thesis.tex
 \chapter{RekenRangers}
-
-\section{High-level design philospohy}
+The previous chapters identified a gap between classroom exercise tools and controlled research software, and Chapter 4 formalised that gap as a problem statement. This chapter describes RekenRangers, the platform built to address it. RekenRangers is a web-based arithmetic learning tool designed for primary school children aged 7 to 11. It is built to function both as a daily classroom exercise tool and as a configurable research instrument, so that the same platform children use to practise arithmetic can also serve as the environment in which researchers run controlled experiments.\\ \\
+The platform is hosted on a KU Leuven server and accessible through any modern web browser at \texttt{rekenrangers.cs.kuleuven.be}, which means it runs on the laptops, tablets, and Chromebooks that schools already have without requiring any installation. The back-end is written in Python using the Flask web framework \cite{grinberg2018flask}, with a MySQL database for persistent storage. The front-end uses HTML, CSS, and JavaScript, with the Bootstrap library for responsive layout. The full codebase is maintained in a private GitHub repository.\\ \\
+This chapter begins by describing the design process and the decisions that shaped the platform at a high level, then walks through the tool's approach to each of the twelve properties identified in Chapters 2 and 3.
+\section{Design process and guiding principles}
+RekenRangers was not designed in isolation. Building a tool that needs to work for children, teachers, and researchers at the same time requires input from all three groups, and the design process was set up to make that possible. Research in educational technology has consistently shown that involving stakeholders early and continuously in the design process leads to tools that are more likely to be adopted and that better fit the needs of the people who will actually use them \cite{cumbo2022participatory}.\\ \\
+The core development, both back-end and front-end, was carried out by the author of this thesis. Design decisions, however, were shaped through continuous collaboration with three key partners. The first is the co-supervisor of this thesis, Elien Bellon, whose research on metacognitive monitoring in arithmetic \cite{bellon_more_2019, bellon2020, bellon2021} provided both the scientific grounding for the platform's metacognition features and a concrete benchmark study to replicate. The second group consists of two master's students in pedagogical sciences at KU Leuven: Eline T'joen and Kiara Willems. Whose own theses depended on using RekenRangers in classroom settings. Their involvement meant that design decisions were tested against real use cases from the start: if a feature did not make sense to someone planning a study with third-graders, it was reworked. The third source of input, less direct but equally important, was the set of existing tools discussed in Chapters 2 and 3. These tools served a dual role in the design process. Rekentuin and Automatus provided models for what a child-friendly arithmetic tool looks and feels like, from adaptive difficulty to avatar systems to coin-based reward structures. OpenSesame and PsychoPy provided a clear reference for the kinds of experimental control and data logging a research tool must offer, but they also provided a vivid image of what happens when engagement is not a priority. The black-screen, stimulus-response experience that characterises most experiments built in these tools (see Figure~\ref{fig:black_screen}) was a constant reminder of what RekenRangers needed to avoid.\\ \\
+This combination of perspectives shaped two core principles that guided the design throughout.\\ \\
+The first was that the replication of the Bellon et al. study \cite{bellon_more_2019} had to be possible from day one. This study, which investigates the relationship between metacognitive monitoring and arithmetic performance in children, served as a concrete test case during development. Every design decision was checked against the question: can this study still be configured and run with the current version of the tool? This kept the development grounded in a real research need rather than in abstract feature lists.\ \
+The second was that the tool had to work for people who do not write code, and feel like a game to the children using it. If configuring a study required programming, the tool would fail at the same point where OpenSesame and PsychoPy fail. If the child-facing side looked clinical and bare, the tool would produce the same motivation problems described in Section 2.4. These concerns, from no-code configuration to gamification to standalone classroom use, are not separate principles but different faces of the same one: the platform must be designed for the people who actually use it, whether they are a researcher setting up an experiment, a teacher assigning practice, or a seven-year-old opening the tool for the first time.\\ \\
+Generative AI tools were used during development to assist with specific implementation tasks such as generating boilerplate code and debugging. All architectural decisions, feature design, and user interface design were made by the author in collaboration with the partners described above.\\ \\
+The following section describes how each of the twelve properties from Chapters 2 and 3 was addressed in the design and implementation of RekenRangers.
 
 \section{Approach: design decisions per property}
+This section walks through each of the twelve properties from Chapters 2 and 3 and describes how RekenRangers addresses them. The research-tool properties are discussed first, followed by the exercise-tool properties.
+\subsubsection{Adaptivity}
+A core requirement identified in Section 3.1 is that exercises should match the child's current ability level. RekenRangers implements this through an adaptive difficulty system inspired by the Elo rating principle, informed by the work of Klinkenberg et al. on the adaptive engine behind Rekentuin \cite{klinkenberg2011computer}. The system described below was developed in collaboration with Eline T'joen and Kiara Willems.\\ \\
+The central idea is that each child maintains a numerical rating that reflects their estimated skill level. This rating starts at 450 on a scale from 0 to 1000 and is updated after every exercise using the standard Elo update rule:
+\begin{equation}
+\theta'_j = \theta_j + K(S{ij} - E(S_{ij}))
+\end{equation}
+where \(\theta_j\) is the child's current rating, \(S_{ij}\) is the score obtained on the exercise, and \(E(S_{ij})\) is the expected score. The paramter \(K\) controls how strongly the rating reacts to each answer and was set to \(K = 20\) after callibration across two pilot studies in the classroom settings.\\ \\
+The expected score is fixed at \(E(S_{ij}) = 0.75\). This value was chosen based on findings in the adaptive learning literature suggesting that a target success rate around 75\% keeps learners in a productive zone: high enough to maintain confidence, but low enough that the task remains challenging \cite{klinkenberg2011computer}. The system converges toward a state where the child answers roughly three out of four exercises correctly.\\ \\
+How the actual score \(S_{ij}\) is computed depends on whether the child answered correctly. An incorrect answer always results in \(S_{ij} = 0\), which produces a rating decrease. A correct answer incorporates response time through a quadratic scoring function:
+\begin{equation}
+S_{ij} = -\frac{5}{4d_i^2} \cdot t_{ij}^2 + 2
+\end{equation}
+where \(t_{ij}\) is the time the child took and \(d_i\)is the time limit for that exercise. This function has a natural interpretation. If the child answers exactly at the time limit, the score equals 0.75, which matches the expected score and produces no rating change. Answering faster yields a score above 0.75 and pushes the rating up. This means the system does not just track whether a child can solve a problem, but also how fluently they can solve it.\\ \\
+The rating then determines which exercises the child sees. Exercises are categorised into three difficulty levels (easy, medium, and difficult), and the system selects from a probability distribution that shifts as the rating increases:
+\begin{table}[ht]
+\centering
+\begin{tabular}{lll}
+\toprule
+Difficulty zone & Rating range & Exercise distribution \\
+\midrule
+1 & 0 -- 200 & 100\% easy \\
+2 & 200 -- 400 & 70\% easy, 30\% medium \\
+3 & 400 -- 600 & 70\% medium, 20\% easy, 10\% difficult \\
+4 & 600 -- 800 & 70\% difficult, 30\% medium \\
+5 & 800 -- 1000 & 100\% difficult \\
+\bottomrule
+\end{tabular}
+\caption{Difficulty zone distribution based on participant rating. Children are gradually exposed to harder exercises as their estimated ability increases.}
+\label{tab:difficulty-zones}
+\end{table}
+This structure ensures a smooth progression. A child who is just starting, sits in the third difficulty zone. As they improve and their rating climbs, the proportion of difficult exercises increases. A child who struggles, sees their rating drop back down, which increases the proportion of easier exercises again. The system is self-correcting: it does not require the teacher to manually adjust difficulty, and it responds to each child individually.\\ \\
+It is worth noting that adaptivity in RekenRangers is a configurable feature, not a fixed one. In research mode, the teacher or researcher can choose to disable the adaptive system entirely and fix the difficulty at a specific level, which is essential for experimental designs that require identical conditions across participants. This configurability is discussed further in Section~\ref{sec:experimental-control}. The specific exercises and operations that the tool supports (addition, subtraction, multiplication, and combinations thereof) are described in the section on flexibility (Section~\ref{sec:flexibility}).
