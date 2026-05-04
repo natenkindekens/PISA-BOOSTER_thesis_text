@@ -1,0 +1,65 @@
+
+\chapter{Exercise Specification}
+\label{app:exercise-spec}
+
+RekenRangers supports three arithmetic operations: addition, subtraction, and multiplication. For each operation, exercises are classified into three difficulty levels based on properties of the operands and the result. This appendix describes the classification rules for each operation.
+
+\section{Addition}
+
+The difficulty of an addition exercise $a + b = s$ is determined by the magnitude of the operands and whether the addition requires carrying (i.e., whether the sum of the unit digits exceeds or equals 10).
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{cp{10cm}}
+\toprule
+Level & Criteria \\
+\midrule
+1 (easy) & The sum is less than 10. Both operands are single-digit numbers and the result stays within the single digits. \\
+2 (medium) & The sum is 10 or greater, but no carrying is required, except for two single digits. This includes cases where both operands are single-digit and the sum just crosses 10, as well as cases involving two-digit operands where the unit digits sum to less than 10. \\
+3 (difficult) & Both operands are two-digit numbers and carrying is required: the sum of the unit digits is 10 or greater. \\
+\bottomrule
+\end{tabular}
+\caption{Difficulty classification for addition exercises.}
+\label{tab:diff-addition}
+\end{table}
+
+\section{Subtraction}
+
+The difficulty of a subtraction exercise $a - b$ (where $a \geq b$) depends on the magnitude of the operands and whether borrowing is required (i.e., whether the unit digit of $a$ is smaller than the unit digit of $b$).
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{cp{10cm}}
+\toprule
+Level & Criteria \\
+\midrule
+1 (easy) & Both operands are single-digit numbers and the result is less than 10. \\
+2 (medium) & At least one operand is a two-digit number, but no borrowing is required: the unit digit of $a$ is greater than or equal to the unit digit of $b$. \\
+3 (difficult) & Both operands are two-digit numbers and borrowing is required: the unit digit of $a$ is smaller than the unit digit of $b$. \\
+\bottomrule
+\end{tabular}
+\caption{Difficulty classification for subtraction exercises.}
+\label{tab:diff-subtraction}
+\end{table}
+
+\section{Multiplication}
+
+The difficulty of a multiplication exercise $a \times b = p$ is based on the magnitude of the operands and the product.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{cp{10cm}}
+\toprule
+Level & Criteria \\
+\midrule
+1 (easy) & The product is at most 25. These are small multiplication facts that children typically memorise early. \\
+2 (medium) & Both operands are at most 10 (single-digit multiplication tables), but the product exceeds 25. \\
+3 (difficult) & Both operands are at most 20, with exactly one operand exceeding 10. These exercises require multiplying a single-digit number by a two-digit number. \\
+\bottomrule
+\end{tabular}
+\caption{Difficulty classification for multiplication exercises.}
+\label{tab:diff-multiplication}
+\end{table}
+
+\noindent These classification rules are implemented as deterministic functions in the back-end. When the adaptive system selects an exercise, it first determines which difficulty level to draw from (based on the child's current rating and the distribution in Table~\ref{tab:difficulty-zones}), then generates a random exercise that satisfies the corresponding criteria.\\ \\
+The difficulty classification described above is based on the categorisation of arithmetic exercises used in the Flemish primary school mathematics curriculum \cite{REF_CURRICULUM}, which distinguishes exercises by operand magnitude and the presence or absence of carrying and borrowing as key indicators of cognitive complexity.
