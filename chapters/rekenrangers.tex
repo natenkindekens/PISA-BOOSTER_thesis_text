@@ -59,3 +59,46 @@ The coin system is tied directly to performance. Children earn more coins for co
 \end{figure}
 
 \noindent The safari theme is not limited to the reward system. It runs through the entire application: the background illustrations, the button styles, the icons, the login screen, and the characters that guide the child through the interface are all designed around the same visual identity. This consistency matters because it reinforces the idea that the child is inside a world, not just using a tool. All visual assets used in the platform, including character illustrations, background scenes, and animal images, were created using generative AI and then carefully selected and adapted to fit the visual style of the application.\\ \\
+
+\subsubsection{Feedback}
+After every exercise, the child receives immediate feedback on their answer. If the answer is correct, the screen shows a short confirmation message. If the answer is wrong, the correct answer is displayed alongside the child's attempt, so that the child can see exactly where they went wrong. The feedback is deliberately kept simple and direct: no elaborate explanations or worked-out solutions, just a clear signal of correctness and, when needed, the right answer. While more detailed explanations could be valuable, the scope of the exercises (single-step addition, subtraction, and multiplication) and the time constraints of the project made the current approach a reasonable first step.\\ \\
+When the metacognitive self-assessment setting is enabled, a second layer of feedback is added. After each exercise, the child is asked to judge their own answer using a row of four smileys ranging from confident-correct (green) to confident-wrong (red). Once both the answer and the self-assessment are submitted, the feedback screen evaluates both. The self-assessment is considered correct if the child's confidence matched the actual outcome: selecting green or yellow when the answer was right, or orange or red when it was wrong. If the child misjudged their own performance, the feedback tells them so explicitly. Figure~\ref{fig:feedback-screen} shows an example of an exercise that was answered incorrectly but where the child correctly anticipated the mistake.\\ \\
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/feedback.png}
+\caption{The feedback screen after an incorrectly answered exercise. The child answered \(66+90=146\), which is marked as wrong, and the correct answer \((66+90=146)\) is shown. The child selected the red smiley, indicating they suspected the answer was wrong, which the system confirms as a good self-assessment.}
+\label{fig:feedback-screen}
+\end{figure}
+\noindent This dual feedback loop is central to the metacognitive research that RekenRangers was designed to support. It mirrors the confidence judgement paradigm used in the Bellon et al. study \cite{bellon_more_2019}, while wrapping it in a visual language that is accessible to children as young as seven.
+
+\subsubsection{Personalisation}
+Personalisation is the property where RekenRangers has the most room for growth. The original intention was to integrate an avatar system into the safari theme, where each child would have their own ranger character that could be customised with outfits and accessories purchased with earned coins. Due to time constraints and the need to prioritise the research-critical features, this was not implemented in the current version of the platform.\\ \\
+What RekenRangers does offer is a form of functional personalisation. When enabled by the teacher or researcher, children can choose for themselves which operation they want to practise, what difficulty level they prefer, and whether they want to see a timer. These choices give children a degree of control over their own learning experience, which as discussed in Section 3.1 can support metacognitive awareness and a sense of ownership. Additionally, each child works with their own account, and their coin balance and puzzle progress are personal to them. A child who has saved up coins and completed three animal puzzles sees a different puzzle screen than a classmate who just started. This creates some sense of individual identity within the platform, even without a visual avatar.\\ \\
+The foundation for deeper personalisation is in place. The account system, the coin economy, and the safari theme all lend themselves naturally to extensions such as customisable ranger avatars, personal statistics dashboards, or achievement badges. These are realistic additions for future development and would strengthen a property that is currently functional but not yet fully realised.\\ \\
+
+\subsubsection{Accessibility}
+RekenRangers is a web application hosted on a KU Leuven server and accessible at \texttt{rekenrangers.cs.kuleuven.be}. It runs in any modern browser without requiring software installation, plugins, or account creation through an external service. This means the tool works on the laptops, tablets, Chromebooks, and even phones that schools and families already have. The only requirements are an internet connection and a browser. There is currently no dedicated mobile app, and the interface is not specifically optimised for smaller screens, but both are realistic extensions for future development.\\ \\
+Access to the platform is managed through a two-step login system designed to be usable by young children without adult help. The child first enters a group code, which identifies their class or research group. They then select their name from a list and enter a personal animal code: a sequence of four animal icons that serves as a child-friendly alternative to a traditional password. Figure~\ref{fig:accessibility} illustrates both the login screen and the printable cards.\\ \\
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{figures/animal-login.png}
+        \caption{The student login screen. After selecting their name, the child enters their personal animal code by clicking four animal icons in the correct order.}
+        \label{fig:animal-login}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{\textwidth}
+         \vspace{0.5cm} 
+        \centering
+        \includegraphics[width=0.4\textwidth]{figures/login-cards.png}
+        \caption{Printable login cards generated through the teacher dashboard. Each card shows the child's name, group code, and personal animal code, and can be taken home for use outside the classroom.}
+        \label{fig:login-cards}
+    \end{subfigure}
+    \caption{The RekenRangers login system. Children access the platform using a group code and a personal animal code, both provided through printable cards distributed by the teacher or researcher.}
+    \label{fig:accessibility}
+\end{figure}Teachers and researchers generate these cards through the group management screen in the teacher dashboard. The cards can be printed and handed out in class, and since they contain everything a child needs to log in, they also enable use at home. This low-threshold approach to access means that RekenRangers can serve as both a classroom tool and a home practice tool without any additional setup.\\ \\
+\subsubsection{User friendliness}
+The final exercise-tool property is user friendliness, and for RekenRangers this is less a single feature than a principle that runs through every screen of the application. The target audience is children between seven and eleven years old, and every interface element was designed with that in mind. Buttons are large and clearly labelled, navigation follows a simple top-to-bottom flow, and the visual language uses colours, icons, and illustrations rather than relying on text. All text that does appear is written in simple, child-appropriate Dutch.\\ \\
+To help children get started without needing an adult to explain the tool, RekenRangers includes an interactive demo mode. The demo walks the child through the full exercise flow step by step: how to read and answer an exercise, how to submit their answer, how the coin reward works, and how to navigate to the puzzle screen. When the metacognitive self-assessment setting is enabled, a separate version of the demo is available that also explains the smiley-based confidence judgement and what the feedback on it means. The demo can be replayed at any time, so a child who is unsure about something mid-session can revisit the explanation without having to ask for help.\\ \\
+The goal behind all of these choices is the same one that Section 3.1 identified through cognitive load theory \cite{sweller1988cognitive}: the interface should be invisible. Every moment a child spends figuring out where to click or what a button means is a moment they are not spending on arithmetic. A well-designed exercise tool is one where the child forgets they are using a tool at all.\\ \\
