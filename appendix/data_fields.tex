@@ -1,0 +1,35 @@
+\chapter{Data Fields}
+\label{app:data-fields}
+
+Table~\ref{tab:data-fields} lists all fields recorded for each exercise completed in RekenRangers.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lp{9cm}}
+\toprule
+Field & Description \\
+\midrule
+user & The student who completed the exercise \\
+set\_id & Unique identifier linking all exercises completed in one session \\
+operation & The arithmetic operation (addition, subtraction, or multiplication) \\
+left\_operand & The first operand of the exercise \\
+right\_operand & The second operand of the exercise \\
+user\_answer & The answer entered by the child \\
+real\_answer & The correct answer \\
+is\_correct & Whether the child's answer was correct \\
+response\_time & Time taken to answer the exercise (in milliseconds) \\
+timestamp & The exact date and time the exercise was completed \\
+difficulty & The difficulty level of the exercise (1, 2, or 3) \\
+timer\_visible & Whether the timer was visible to the child during the exercise \\
+confidence\_judgement & The self-assessment smiley selected by the child (if enabled) \\
+confidence\_calibration & Whether the self-assessment matched the actual outcome \\
+response\_time\_selfscore & Time taken to select the confidence judgement \\
+response\_time\_feedback & Time spent on the feedback screen \\
+current\_elo & The child's Elo rating at the time of the exercise \\
+delta\_elo & The change in Elo rating produced by this exercise \\
+difficulty\_zone & The difficulty zone the child was in (1 through 5) \\
+\bottomrule
+\end{tabular}
+\caption{Complete list of data fields recorded for each exercise in RekenRangers.}
+\label{tab:data-fields}
+\end{table}
