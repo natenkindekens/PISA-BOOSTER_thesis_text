@@ -6,14 +6,44 @@
 
 Most people learn to count before they learn to read, and few skills follow a child further through life than the ability to do arithmetic. Yet despite its seemingly basic nature, arithmetic in primary school children remains one of the most actively studied topics in educational psychology. The reason for this is simple: we still do not fully understand how children learn it, why some struggle so much more than others, and what we can do about it.\\ \\
 Part of what keeps this field alive is that the numbers coming out of large-scale assessments keep raising questions. Belgium's average PISA mathematics score dropped from 508 in 2018 to 489 in 2022. That is the lowest value recorded since the country began participating \cite{globaleconomy2022belgium}. This is not an isolated story either. PISA trend analysis shows that Belgium's decline in mathematics had already begun before 2018 (see Figure \ref{fig:pisa_scores_belgium}), meaning the drop cannot simply be blamed on the pandemic. The same pattern plays out internationally: across OECD countries, mean performance in mathematics fell by a record of 15 points between 2018 and 2022 \cite{oecd2023pisa}. Something is going wrong, and it is going wrong early.\\ \\
-The stakes are higher than just test scores. High-quality mathematics education not only improves life outcomes for individuals but also drives innovation and progress across society \cite{ansari2025arithmetic}. McNeil et al. shows that the arithmetic skills a child builds in primary school are not just useful for that year, but they form the foundation for everything that comes after \cite{ansari2025arithmetic}. Early numeracy skills are robust predictors of later mathematical achievement, with strong correlations observed between early assessments and standardized test scores in later years. Children who fall behind in arithmetic early tend to stay behind, and catching up becomes progressively harder as the curriculum moves on. \\ \\ \begin{figure}[h]
-  \centering
-  \includegraphics[width=0.85\textwidth]{figures/pisa_scores_belgium.png}
-  \caption[PISA math scores from ]
-  {Evolution of Belgium's PISA mathematics scores from 2003 to 2022, showing a clear downward trend in average performance over time. \cite{globaleconomy2022belgium}}
-  \label{fig:pisa_scores_belgium}
-\end{figure} \\ \\
-What makes this field particularly active is that arithmetic turns out to be far 
+The stakes are higher than just test scores. High-quality mathematics education not only improves life outcomes for individuals but also drives innovation and progress across society \cite{ansari2025arithmetic}. McNeil et al. shows that the arithmetic skills a child builds in primary school are not just useful for that year, but they form the foundation for everything that comes after \cite{ansari2025arithmetic}. Early numeracy skills are robust predictors of later mathematical achievement, with strong correlations observed between early assessments and standardized test scores in later years. Children who fall behind in arithmetic early tend to stay behind, and catching up becomes progressively harder as the curriculum moves on. \\ \\ 
+
+\begin{figure}[ht]
+    \centering
+
+    \begin{tikzpicture}
+    \begin{axis}[
+        xtick=data,
+        x tick label style={
+            /pgf/number format/1000 sep=},
+        xlabel={Year},
+        ylabel={Score},
+        enlargelimits=0.05,
+        ymin=480,
+        ymax=540,
+        ybar,
+        bar width=15pt,
+        nodes near coords,
+        nodes near coords align={vertical},
+    ]
+
+    \addplot coordinates {
+        (2003,529.3)
+        (2006,520.3)
+        (2009,515.3)
+        (2012,514.5)
+        (2015,507.0)
+        (2018,508.1)
+        (2022,489.5)
+    };
+
+    \end{axis}
+    \end{tikzpicture}
+
+    \caption{Evolution of Belgium's PISA mathematics scores from 2003 to 2022, showing a clear downward trend in average performance over time. \cite{globaleconomy2022belgium}}
+    \label{fig:pisa_scores_belgium}
+\end{figure}
+\noindent What makes this field particularly active is that arithmetic turns out to be far 
 more complex than it looks from the outside. On the surface, solving a sum seems 
 straightforward. But decades of research have made clear that children bring a 
 whole collection of cognitive skills to the table when they do arithmetic. Skills that are still developing throughout primary school and that differ 
