@@ -1,11 +1,11 @@
 % !TeX root = ../thesis.tex
 \chapter{Background and Motivation: The State of Arithmetic Reserach Tools}
-
+This chapter sets the stage for the rest of the thesis. It begins by establishing that arithmetic learning in primary school children is an active and consequential research field, then asks what kind of tools that research requires. Six properties of a good research tool are defined and used to evaluate two widely used platforms in the field: OpenSesame and PsychoPy. The chapter closes by examining what happens when these tools fall short, and why the consequences go beyond inconvenience for the researcher.\\ \\
 
 \section{Arithmetic research in primary school children: an active field}
 
-Most people learn to count before they learn to read, and few skills follow a child further through life than the ability to do arithmetic. Yet despite its seemingly basic nature, arithmetic in primary school children remains one of the most actively studied topics in educational psychology. The reason for this is simple: we still do not fully understand how children learn it, why some struggle so much more than others, and what we can do about it.\\ \\
-Part of what keeps this field alive is that the numbers coming out of large-scale assessments keep raising questions. Belgium's average PISA mathematics score dropped from 508 in 2018 to 489 in 2022. That is the lowest value recorded since the country began participating \cite{globaleconomy2022belgium}. This is not an isolated story either. PISA trend analysis shows that Belgium's decline in mathematics had already begun before 2018 (see Figure \ref{fig:pisa_scores_belgium}), meaning the drop cannot simply be blamed on the pandemic. The same pattern plays out internationally: across OECD countries, mean performance in mathematics fell by a record of 15 points between 2018 and 2022 \cite{oecd2023pisa}. Something is going wrong, and it is going wrong early.\\ \\
+Most people learn to count before they learn to read, and few skills follow a child further through life than the ability to do arithmetic. Yet despite its seemingly basic nature, how primary school children learn arithmetic remains one of the most actively studied topics in educational psychology. The reason for this is simple: we still do not fully understand how children learn it, why some struggle so much more than others, and what we can do about it.\\ \\
+Part of what makes this field relevant today is that the numbers coming out of large-scale assessments keep raising questions. Belgium's average PISA mathematics score dropped from 508 in 2018 to 489 in 2022. That is the lowest value recorded since the country began participating \cite{globaleconomy2022belgium}. This is not an isolated story either. PISA trend analysis shows that Belgium's decline in mathematics had already begun before 2018 (see Figure \ref{fig:pisa_scores_belgium}), meaning the drop cannot simply be blamed on the pandemic. The same pattern plays out internationally: across OECD countries, mean performance in mathematics fell by a record of 15 points between 2018 and 2022 \cite{oecd2023pisa}. Something is going wrong, and it is going wrong early.\\ \\
 The stakes are higher than just test scores. High-quality mathematics education not only improves life outcomes for individuals but also drives innovation and progress across society \cite{ansari2025arithmetic}. McNeil et al. shows that the arithmetic skills a child builds in primary school are not just useful for that year, but they form the foundation for everything that comes after \cite{ansari2025arithmetic}. Early numeracy skills are robust predictors of later mathematical achievement, with strong correlations observed between early assessments and standardized test scores in later years. Children who fall behind in arithmetic early tend to stay behind, and catching up becomes progressively harder as the curriculum moves on. \\ \\ 
 
 \begin{figure}[ht]
@@ -72,8 +72,8 @@ whether they get the right answer, but how long it takes, how confident they are
 and how their performance evolves over multiple sessions. The quality of that data 
 depends directly on the quality of the tools used to collect it. As this thesis 
 will argue, the tools currently available leave a significant gap between what 
-researchers need and what they can actually get. That gap is the starting point 
-for everything that follows.
+researchers need and what is currently available. That gap is the starting point 
+for this work.
 
 
 \section{What a good research tool needs}
@@ -179,7 +179,6 @@ At this point, a pattern is becoming visible. Both OpenSesame and PsychoPy satis
 \label{fig:research-tool-grid}
 \end{figure}
 
-\subsection{Other tools in the landscape}
 
 \subsection{Shared limitations}
 The previous sections have shown that OpenSesame and PsychoPy are strong research tools. On five of the six properties defined in Section 2.2 they deliver exactly what a researcher needs: clean data tracking, full experimental control, reproducible setups, flexible designs, and reliability. But the picture changes completely when you step back and ask a different question: what is it actually like for a child to sit in front of one of these tools?\\ \\
@@ -190,7 +189,7 @@ This is not an oversight by the developers of these tools. OpenSesame and Psycho
 \includegraphics[width=0.85\textwidth]{figures/zwart_scherm.png}
 \caption{Example of a stimulus presentation screen created in OpenSesame, showing a simple arithmetic task with multiple-choice response options.}
 \label{fig:black_screen}
-\end{figure}This creates a frustrating situation. Researchers who study arithmetic learning in children know from their own literature that engagement matters, that motivation declines over repeated sessions if the task feels repetitive, and that adaptive difficulty helps keep children in a productive learning zone. They also know that personalisation — letting a child choose their own difficulty, see their own progress, or pick which exercise to do next — can increase ownership and metacognitive awareness. These are not luxuries; they are features that directly affect the quality of the data a study produces. A child who is bored or frustrated is not giving the researcher a reliable window into their arithmetic ability. Yet the tools these researchers have at their disposal make it extremely difficult to include any of these features without significant programming effort.\\ \\
+\end{figure}This creates a frustrating situation. Researchers who study arithmetic learning in children know from their own literature \myworries{REFERENTIE}that engagement matters, that motivation declines over repeated sessions if the task feels repetitive, and that adaptive difficulty helps keep children in a productive learning zone. They also know that personalisation — letting a child choose their own difficulty, see their own progress, or pick which exercise to do next — can increase ownership and metacognitive awareness. These are not luxuries; they are features that directly affect the quality of the data a study produces. A child who is bored or frustrated is not giving the researcher a reliable window into their arithmetic ability. Yet the tools these researchers have at their disposal make it extremely difficult to include any of these features without significant programming effort.\\ \\
 The result is a kind of forced compromise. Researchers end up running studies with interfaces that look nothing like what children are used to in their daily digital lives, in environments that strip away every motivational element, using tools that children have never seen before and will never see again. The experiment measures arithmetic performance, but it does so in conditions that are far removed from the classroom context the research is ultimately trying to understand. Whether this matters, and how much it matters, is the question taken up in Section 2.4.
 
 \section{Why this matters: the cost of a bad research tool}
@@ -211,4 +210,6 @@ If the research tool were also used outside of the experiment, for regular class
 
 \subsection*{The bottom line}
 All three mechanisms point in the same direction. A research tool that is ecologically valid, motivationally engaging, and familiar to the children who use it is not a luxury or a nice-to-have. It is a prerequisite for producing data that accurately reflects what it claims to measure. In short: a better tool means better research. The question, then, is where to find such a tool. The natural place to look is at the platforms children already use for arithmetic practice in classrooms. That is the direction taken in Chapter 3.
+
+\section{A concrete example: the Bellon et al. studies}
 
