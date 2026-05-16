@@ -66,6 +66,7 @@ The teacher and researcher dashboard was designed to be self-explanatory, but fo
 There is still room for improvement on this front. The current settings interface is functional but could benefit from more visual aids, such as a preview of what the child will see given the current configuration, or a visual timeline of the exercise sequence rather than a table. These enhancements are discussed as future work in Section 10.2.\\ \\
 
 \subsubsection{Adaptivity}
+\label{sec:adaptivity}
 A core requirement identified in Section 3.1 is that exercises should match the child's current ability level. RekenRangers implements this through an adaptive difficulty system inspired by the Elo rating principle, informed by the work of Klinkenberg et al. on the adaptive engine behind Rekentuin \cite{klinkenberg2011computer}. The system described below was developed in collaboration with Eline T'joen and Kiara Willems.\\ \\
 The central idea is that each child maintains a numerical rating that reflects their estimated skill level. This rating starts at 450 on a scale from 0 to 1000 and is updated after every exercise using the standard Elo update rule:
 \begin{equation}
