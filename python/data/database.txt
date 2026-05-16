@@ -1,0 +1,295 @@
+---------- CONDITIE 1 ----------
+
+
++-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
+| condition_label | n_students | mean_unused_coins | mean_spent_coins | mean_pct_spent | students_who_spent_nothing | students_spent_half_or_more |
++-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
+| Conditie_1      |         27 |              11.3 |            659.8 |           98.3 |                          0 |                          27 |
++-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
+
++-----------------+-----------------------------+--------------+-------------+--------------+-----------+-----------------+
+| condition_label | username                    | unused_coins | spent_coins | total_earned | pct_spent | pieces_unlocked |
++-----------------+-----------------------------+--------------+-------------+--------------+-----------+-----------------+
+| Conditie_1      | Joshea Nicole Cortes        |           78 |         600 |          678 |      88.5 |              45 |
+| Conditie_1      | Lesly Kazige Mushamaka      |           28 |         480 |          508 |      94.5 |              26 |
+| Conditie_1      | Lisa Van Cannegem           |           17 |         645 |          662 |      97.4 |              33 |
+| Conditie_1      | Emma Hendrikx               |           14 |         600 |          614 |      97.7 |              30 |
+| Conditie_1      | Daoud El Abdellaoui         |           18 |         750 |          768 |      97.7 |              60 |
+| Conditie_1      | Mariam Kalloub              |           17 |         725 |          742 |      97.7 |              47 |
+| Conditie_1      | Soraya Arhunde Oghosa       |           15 |         660 |          675 |      97.8 |              52 |
+| Conditie_1      | Victoria Vingolato          |           16 |         765 |          781 |      98.0 |              51 |
+| Conditie_1      | Juliette Versyp             |           13 |         650 |          663 |      98.0 |              55 |
+| Conditie_1      | Iman Nassir                 |            9 |         495 |          504 |      98.2 |              29 |
+| Conditie_1      | Célia Stauffer              |           11 |         705 |          716 |      98.5 |              47 |
+| Conditie_1      | Izzy Crabbé                 |           10 |         645 |          655 |      98.5 |              33 |
+| Conditie_1      | Bruce Wets                  |            6 |         410 |          416 |      98.6 |              29 |
+| Conditie_1      | Salematou Touré             |           12 |         990 |         1002 |      98.8 |              66 |
+| Conditie_1      | Anis Etaoukil               |            7 |         600 |          607 |      98.8 |              33 |
+| Conditie_1      | Leia Kloos-Helsen           |            7 |         720 |          727 |      99.0 |              58 |
+| Conditie_1      | Victor Tollet               |            5 |         550 |          555 |      99.1 |              31 |
+| Conditie_1      | Ymke Claiysse               |            7 |         735 |          742 |      99.1 |              49 |
+| Conditie_1      | Rémy Fourneau               |            5 |         705 |          710 |      99.3 |              37 |
+| Conditie_1      | Alessio Patrillo            |            4 |         805 |          809 |      99.5 |              45 |
+| Conditie_1      | Alexander Naessens          |            3 |         800 |          803 |      99.6 |              62 |
+| Conditie_1      | Edwin Ponomarenko           |            2 |         750 |          752 |      99.7 |              60 |
+| Conditie_1      | Alexander Carlier           |            1 |         795 |          796 |      99.9 |              53 |
+| Conditie_1      | Leandro Dormaels Tollenaers |            0 |         180 |          180 |     100.0 |               6 |
+| Conditie_1      | Oliver Goudsmedt            |            0 |         690 |          690 |     100.0 |              57 |
+| Conditie_1      | Louise Thysen               |            0 |         625 |          625 |     100.0 |              52 |
+| Conditie_1      | Vince Ramaekers             |            0 |         740 |          740 |     100.0 |              41 |
++-----------------+-----------------------------+--------------+-------------+--------------+-----------+-----------------+
+
++-----------------+-----------------------------+-------------------+-----------------+-----------------+
+| condition_label | username                    | puzzles_completed | puzzles_started | puzzles_touched |
++-----------------+-----------------------------+-------------------+-----------------+-----------------+
+| Conditie_1      | Daoud El Abdellaoui         |                 4 |               0 |               4 |
+| Conditie_1      | Edwin Ponomarenko           |                 4 |               0 |               4 |
+| Conditie_1      | Salematou Touré             |                 4 |               1 |               5 |
+| Conditie_1      | Alexander Naessens          |                 4 |               1 |               5 |
+| Conditie_1      | Célia Stauffer              |                 3 |               1 |               4 |
+| Conditie_1      | Joshea Nicole Cortes        |                 3 |               0 |               3 |
+| Conditie_1      | Ymke Claiysse               |                 3 |               1 |               4 |
+| Conditie_1      | Leia Kloos-Helsen           |                 3 |               2 |               5 |
+| Conditie_1      | Soraya Arhunde Oghosa       |                 3 |               1 |               4 |
+| Conditie_1      | Oliver Goudsmedt            |                 3 |               1 |               4 |
+| Conditie_1      | Louise Thysen               |                 3 |               1 |               4 |
+| Conditie_1      | Victoria Vingolato          |                 3 |               1 |               4 |
+| Conditie_1      | Alexander Carlier           |                 3 |               1 |               4 |
+| Conditie_1      | Mariam Kalloub              |                 3 |               1 |               4 |
+| Conditie_1      | Juliette Versyp             |                 3 |               1 |               4 |
+| Conditie_1      | Lisa Van Cannegem           |                 2 |               1 |               3 |
+| Conditie_1      | Vince Ramaekers             |                 2 |               2 |               4 |
+| Conditie_1      | Anis Etaoukil               |                 2 |               1 |               3 |
+| Conditie_1      | Rémy Fourneau               |                 2 |               1 |               3 |
+| Conditie_1      | Izzy Crabbé                 |                 2 |               1 |               3 |
+| Conditie_1      | Emma Hendrikx               |                 2 |               0 |               2 |
+| Conditie_1      | Victor Tollet               |                 2 |               1 |               3 |
+| Conditie_1      | Alessio Patrillo            |                 2 |               2 |               4 |
+| Conditie_1      | Bruce Wets                  |                 1 |               2 |               3 |
+| Conditie_1      | Iman Nassir                 |                 1 |               1 |               2 |
+| Conditie_1      | Lesly Kazige Mushamaka      |                 1 |               1 |               2 |
+| Conditie_1      | Leandro Dormaels Tollenaers |                 0 |               1 |               1 |
++-----------------+-----------------------------+-------------------+-----------------+-----------------+
+
+
+---------- CONDITIE 2 ----------
+
+
++-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
+| condition_label | n_students | mean_unused_coins | mean_spent_coins | mean_pct_spent | students_who_spent_nothing | students_spent_half_or_more |
++-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
+| Conditie_2      |         28 |              11.1 |            649.6 |           98.2 |                          1 |                          27 |
++-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
+
++-----------------+-----------------------+--------------+-------------+--------------+-----------+-----------------+
+| condition_label | username              | unused_coins | spent_coins | total_earned | pct_spent | pieces_unlocked |
++-----------------+-----------------------+--------------+-------------+--------------+-----------+-----------------+
+| Conditie_2      | Luchiano Sulejman     |            0 |           0 |            0 |      NULL |               0 |
+| Conditie_2      | Saphora Oudama        |           93 |         525 |          618 |      85.0 |              30 |
+| Conditie_2      | Jules Dhaenens        |           28 |         570 |          598 |      95.3 |              29 |
+| Conditie_2      | Mayron De Leng        |           13 |         450 |          463 |      97.2 |              39 |
+| Conditie_2      | Matts Dedry           |           21 |         750 |          771 |      97.3 |              60 |
+| Conditie_2      | Mehdi Haji Boukhana   |           15 |         725 |          740 |      98.0 |              26 |
+| Conditie_2      | Victor Naessens       |           13 |         720 |          733 |      98.2 |              48 |
+| Conditie_2      | Felicia Barata-Labusa |           12 |         650 |          662 |      98.2 |              35 |
+| Conditie_2      | Bram Lafosse          |           14 |         795 |          809 |      98.3 |              57 |
+| Conditie_2      | Sabrine Verschueren   |            9 |         530 |          539 |      98.3 |              49 |
+| Conditie_2      | Josephine Roelands    |           10 |         600 |          610 |      98.4 |              51 |
+| Conditie_2      | Luchiano Sulejman     |           11 |         715 |          726 |      98.5 |              47 |
+| Conditie_2      | Maxim Tuerlinckx      |           12 |         780 |          792 |      98.5 |              61 |
+| Conditie_2      | Lucy Adiyiah          |           11 |         785 |          796 |      98.6 |              57 |
+| Conditie_2      | Mien Vandendriessche  |            8 |         675 |          683 |      98.8 |              54 |
+| Conditie_2      | Neyla El Bouchakroudi |            7 |         600 |          607 |      98.8 |              30 |
+| Conditie_2      | Henri Desmet          |            7 |         710 |          717 |      99.0 |              58 |
+| Conditie_2      | Haytam M'Chichi       |            6 |         645 |          651 |      99.1 |              47 |
+| Conditie_2      | Lou Biesmans          |            6 |         720 |          726 |      99.2 |              57 |
+| Conditie_2      | Theo Herman           |            5 |         650 |          655 |      99.2 |              53 |
+| Conditie_2      | Eva-Maria Iancu       |            4 |         570 |          574 |      99.3 |              49 |
+| Conditie_2      | Lyana Grobben         |            2 |         570 |          572 |      99.7 |              51 |
+| Conditie_2      | Joppe Stulens         |            2 |         800 |          802 |      99.8 |              53 |
+| Conditie_2      | Gaston Furniere       |            1 |         735 |          736 |      99.9 |              49 |
+| Conditie_2      | Lieze Stassen         |            1 |         775 |          776 |      99.9 |              50 |
+| Conditie_2      | Jaskirat Singh        |            0 |         620 |          620 |     100.0 |              36 |
+| Conditie_2      | Sores Köl             |            0 |         800 |          800 |     100.0 |              59 |
+| Conditie_2      | Leah Decloet          |            0 |         725 |          725 |     100.0 |              45 |
++-----------------+-----------------------+--------------+-------------+--------------+-----------+-----------------+
+
++-----------------+-----------------------+-------------------+-----------------+-----------------+
+| condition_label | username              | puzzles_completed | puzzles_started | puzzles_touched |
++-----------------+-----------------------+-------------------+-----------------+-----------------+
+| Conditie_2      | Matts Dedry           |                 4 |               0 |               4 |
+| Conditie_2      | Maxim Tuerlinckx      |                 4 |               1 |               5 |
+| Conditie_2      | Lyana Grobben         |                 3 |               1 |               4 |
+| Conditie_2      | Joppe Stulens         |                 3 |               2 |               5 |
+| Conditie_2      | Lieze Stassen         |                 3 |               1 |               4 |
+| Conditie_2      | Sabrine Verschueren   |                 3 |               1 |               4 |
+| Conditie_2      | Henri Desmet          |                 3 |               1 |               4 |
+| Conditie_2      | Gaston Furniere       |                 3 |               1 |               4 |
+| Conditie_2      | Sores Köl             |                 3 |               2 |               5 |
+| Conditie_2      | Theo Herman           |                 3 |               1 |               4 |
+| Conditie_2      | Josephine Roelands    |                 3 |               1 |               4 |
+| Conditie_2      | Victor Naessens       |                 3 |               1 |               4 |
+| Conditie_2      | Eva-Maria Iancu       |                 3 |               1 |               4 |
+| Conditie_2      | Mien Vandendriessche  |                 3 |               1 |               4 |
+| Conditie_2      | Lucy Adiyiah          |                 3 |               2 |               5 |
+| Conditie_2      | Luchiano Sulejman     |                 3 |               1 |               4 |
+| Conditie_2      | Bram Lafosse          |                 3 |               2 |               5 |
+| Conditie_2      | Lou Biesmans          |                 3 |               1 |               4 |
+| Conditie_2      | Jaskirat Singh        |                 2 |               3 |               5 |
+| Conditie_2      | Haytam M'Chichi       |                 2 |               2 |               4 |
+| Conditie_2      | Leah Decloet          |                 2 |               2 |               4 |
+| Conditie_2      | Neyla El Bouchakroudi |                 2 |               0 |               2 |
+| Conditie_2      | Felicia Barata-Labusa |                 2 |               1 |               3 |
+| Conditie_2      | Mayron De Leng        |                 2 |               2 |               4 |
+| Conditie_2      | Saphora Oudama        |                 2 |               0 |               2 |
+| Conditie_2      | Mehdi Haji Boukhana   |                 1 |               1 |               2 |
+| Conditie_2      | Jules Dhaenens        |                 1 |               1 |               2 |
++-----------------+-----------------------+-------------------+-----------------+-----------------+
+
+
+---------- CONDITIE 3 ----------
+
+
++-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
+| condition_label | n_students | mean_unused_coins | mean_spent_coins | mean_pct_spent | students_who_spent_nothing | students_spent_half_or_more |
++-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
+| Conditie_3      |         28 |               8.3 |            580.4 |           98.6 |                          1 |                          27 |
++-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
+
++-----------------+--------------------------+--------------+-------------+--------------+-----------+-----------------+
+| condition_label | username                 | unused_coins | spent_coins | total_earned | pct_spent | pieces_unlocked |
++-----------------+--------------------------+--------------+-------------+--------------+-----------+-----------------+
+| Conditie_3      | Nada Talla               |            0 |           0 |            0 |      NULL |               0 |
+| Conditie_3      | Yasmin El Wahabi Benkib  |           24 |         570 |          594 |      96.0 |              29 |
+| Conditie_3      | Alice Vande Vyvere       |           15 |         550 |          565 |      97.3 |              50 |
+| Conditie_3      | Alana Deflin             |           12 |         450 |          462 |      97.4 |              39 |
+| Conditie_3      | Laura Adams              |           15 |         575 |          590 |      97.5 |              50 |
+| Conditie_3      | Nikola Pietryk           |           14 |         570 |          584 |      97.6 |              29 |
+| Conditie_3      | Aroussi Maysammé         |           14 |         630 |          644 |      97.8 |              54 |
+| Conditie_3      | Carmin Kivork K          |           12 |         570 |          582 |      97.9 |              51 |
+| Conditie_3      | Charles Dobbels          |           14 |         655 |          669 |      97.9 |              49 |
+| Conditie_3      | Mathijs Biesmans         |           14 |         675 |          689 |      98.0 |              54 |
+| Conditie_3      | Ilias Ayadi              |           16 |         775 |          791 |      98.0 |              61 |
+| Conditie_3      | Oscar Vanhooymissen      |           14 |         765 |          779 |      98.2 |              51 |
+| Conditie_3      | Isaac Meziani            |           11 |         670 |          681 |      98.4 |              56 |
+| Conditie_3      | Nada Talla               |           10 |         600 |          610 |      98.4 |              27 |
+| Conditie_3      | Anas El Idrissi          |            8 |         585 |          593 |      98.7 |              33 |
+| Conditie_3      | Ranjot Singh             |            8 |         590 |          598 |      98.7 |              45 |
+| Conditie_3      | Charlotte De Maerteleire |            7 |         600 |          607 |      98.8 |              30 |
+| Conditie_3      | Alyssa Vansweevelt       |            6 |         540 |          546 |      98.9 |              28 |
+| Conditie_3      | Victoria Oviasogie       |            4 |         680 |          684 |      99.4 |              47 |
+| Conditie_3      | Avleen Kaur              |            3 |         595 |          598 |      99.5 |              43 |
+| Conditie_3      | Zack Biondolillo         |            3 |         555 |          558 |      99.5 |              31 |
+| Conditie_3      | Elea Sahiti              |            3 |         550 |          553 |      99.5 |              31 |
+| Conditie_3      | Vince Vanspauwen         |            3 |         635 |          638 |      99.5 |              37 |
+| Conditie_3      | Mila Dieu                |            1 |         595 |          596 |      99.8 |              50 |
+| Conditie_3      | Samir Reno               |            1 |         455 |          456 |      99.8 |              19 |
+| Conditie_3      | Kaat Hauben              |            0 |         565 |          565 |     100.0 |              39 |
+| Conditie_3      | Noah Jouret              |            0 |         625 |          625 |     100.0 |              40 |
+| Conditie_3      | Mauro Geselle            |            0 |         625 |          625 |     100.0 |              40 |
++-----------------+--------------------------+--------------+-------------+--------------+-----------+-----------------+
+
++-----------------+--------------------------+-------------------+-----------------+-----------------+
+| condition_label | username                 | puzzles_completed | puzzles_started | puzzles_touched |
++-----------------+--------------------------+-------------------+-----------------+-----------------+
+| Conditie_3      | Ilias Ayadi              |                 4 |               1 |               5 |
+| Conditie_3      | Mila Dieu                |                 3 |               2 |               5 |
+| Conditie_3      | Mathijs Biesmans         |                 3 |               1 |               4 |
+| Conditie_3      | Alice Vande Vyvere       |                 3 |               1 |               4 |
+| Conditie_3      | Isaac Meziani            |                 3 |               1 |               4 |
+| Conditie_3      | Oscar Vanhooymissen      |                 3 |               1 |               4 |
+| Conditie_3      | Laura Adams              |                 3 |               1 |               4 |
+| Conditie_3      | Aroussi Maysammé         |                 3 |               1 |               4 |
+| Conditie_3      | Carmin Kivork K          |                 3 |               1 |               4 |
+| Conditie_3      | Avleen Kaur              |                 2 |               2 |               4 |
+| Conditie_3      | Kaat Hauben              |                 2 |               2 |               4 |
+| Conditie_3      | Ranjot Singh             |                 2 |               2 |               4 |
+| Conditie_3      | Victoria Oviasogie       |                 2 |               2 |               4 |
+| Conditie_3      | Alana Deflin             |                 2 |               1 |               3 |
+| Conditie_3      | Charles Dobbels          |                 2 |               2 |               4 |
+| Conditie_3      | Charlotte De Maerteleire |                 2 |               0 |               2 |
+| Conditie_3      | Mauro Geselle            |                 2 |               1 |               3 |
+| Conditie_3      | Anas El Idrissi          |                 2 |               1 |               3 |
+| Conditie_3      | Noah Jouret              |                 2 |               1 |               3 |
+| Conditie_3      | Vince Vanspauwen         |                 2 |               1 |               3 |
+| Conditie_3      | Nikola Pietryk           |                 1 |               1 |               2 |
+| Conditie_3      | Samir Reno               |                 1 |               1 |               2 |
+| Conditie_3      | Nada Talla               |                 1 |               1 |               2 |
+| Conditie_3      | Yasmin El Wahabi Benkib  |                 1 |               1 |               2 |
+| Conditie_3      | Alyssa Vansweevelt       |                 1 |               1 |               2 |
+| Conditie_3      | Elea Sahiti              |                 1 |               3 |               4 |
+| Conditie_3      | Zack Biondolillo         |                 1 |               2 |               3 |
++-----------------+--------------------------+-------------------+-----------------+-----------------+
+
+
+---------- CONDITIE 4 ----------
+
+
++-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
+| condition_label | n_students | mean_unused_coins | mean_spent_coins | mean_pct_spent | students_who_spent_nothing | students_spent_half_or_more |
++-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
+| Conditie_4      |         27 |               6.9 |            590.7 |           98.8 |                          1 |                          26 |
++-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
+
++-----------------+-----------------------+--------------+-------------+--------------+-----------+-----------------+
+| condition_label | username              | unused_coins | spent_coins | total_earned | pct_spent | pieces_unlocked |
++-----------------+-----------------------+--------------+-------------+--------------+-----------+-----------------+
+| Conditie_4      | Bilal Tayarsift       |            0 |           0 |            0 |      NULL |               0 |
+| Conditie_4      | Ahmed Bouyahyaoui     |           24 |         560 |          584 |      95.9 |              31 |
+| Conditie_4      | Amélie Sobrie         |           23 |         575 |          598 |      96.2 |              44 |
+| Conditie_4      | Siebe Corstjens       |           16 |         435 |          451 |      96.5 |              37 |
+| Conditie_4      | Eveleen Kaur          |           15 |         530 |          545 |      97.2 |              49 |
+| Conditie_4      | Dario Casado          |           14 |         630 |          644 |      97.8 |              47 |
+| Conditie_4      | Mona El Mannouchi     |           10 |         550 |          560 |      98.2 |              28 |
+| Conditie_4      | Lianne Noelmans       |           12 |         710 |          722 |      98.3 |              57 |
+| Conditie_4      | Léonié Fieuw          |            9 |         560 |          569 |      98.4 |              43 |
+| Conditie_4      | Firass BenameurMoumen |            8 |         625 |          633 |      98.7 |              40 |
+| Conditie_4      | Juna Stoffels         |            7 |         630 |          637 |      98.9 |              54 |
+| Conditie_4      | Remco Dick            |            6 |         555 |          561 |      98.9 |              33 |
+| Conditie_4      | Lennert Machiels      |            4 |         460 |          464 |      99.1 |              17 |
+| Conditie_4      | Tijl Van Suetendael   |            6 |         725 |          731 |      99.2 |              50 |
+| Conditie_4      | Faith Geurts Mertens  |            4 |         555 |          559 |      99.3 |              29 |
+| Conditie_4      | Arthur Vanhauwaert    |            5 |         665 |          670 |      99.3 |              44 |
+| Conditie_4      | Kelly Martins Barroso |            5 |         705 |          710 |      99.3 |              41 |
+| Conditie_4      | Lee Goossens          |            4 |         745 |          749 |      99.5 |              41 |
+| Conditie_4      | Alia Mansouri         |            3 |         575 |          578 |      99.5 |              44 |
+| Conditie_4      | Lucas Somers          |            3 |         665 |          668 |      99.6 |              46 |
+| Conditie_4      | Bilal Tayarsift       |            2 |         675 |          677 |      99.7 |              45 |
+| Conditie_4      | Ina Gielen            |            2 |         575 |          577 |      99.7 |              40 |
+| Conditie_4      | Maya Milissen         |            2 |         610 |          612 |      99.7 |              42 |
+| Conditie_4      | Guillaume Ghistelinck |            2 |         585 |          587 |      99.7 |              29 |
+| Conditie_4      | Sarah Ouali           |            1 |         600 |          601 |      99.8 |              30 |
+| Conditie_4      | Duke Wandje           |            0 |         725 |          725 |     100.0 |              55 |
+| Conditie_4      | Carlo Vetro           |            0 |         725 |          725 |     100.0 |              48 |
++-----------------+-----------------------+--------------+-------------+--------------+-----------+-----------------+
+
++-----------------+-----------------------+-------------------+-----------------+-----------------+
+| condition_label | username              | puzzles_completed | puzzles_started | puzzles_touched |
++-----------------+-----------------------+-------------------+-----------------+-----------------+
+| Conditie_4      | Dario Casado          |                 3 |               1 |               4 |
+| Conditie_4      | Bilal Tayarsift       |                 3 |               0 |               3 |
+| Conditie_4      | Eveleen Kaur          |                 3 |               1 |               4 |
+| Conditie_4      | Tijl Van Suetendael   |                 3 |               1 |               4 |
+| Conditie_4      | Duke Wandje           |                 3 |               1 |               4 |
+| Conditie_4      | Lianne Noelmans       |                 3 |               2 |               5 |
+| Conditie_4      | Juna Stoffels         |                 3 |               1 |               4 |
+| Conditie_4      | Carlo Vetro           |                 3 |               2 |               5 |
+| Conditie_4      | Ina Gielen            |                 2 |               2 |               4 |
+| Conditie_4      | Amélie Sobrie         |                 2 |               1 |               3 |
+| Conditie_4      | Arthur Vanhauwaert    |                 2 |               1 |               3 |
+| Conditie_4      | Firass BenameurMoumen |                 2 |               1 |               3 |
+| Conditie_4      | Maya Milissen         |                 2 |               2 |               4 |
+| Conditie_4      | Lee Goossens          |                 2 |               2 |               4 |
+| Conditie_4      | Lucas Somers          |                 2 |               2 |               4 |
+| Conditie_4      | Sarah Ouali           |                 2 |               0 |               2 |
+| Conditie_4      | Léonié Fieuw          |                 2 |               1 |               3 |
+| Conditie_4      | Remco Dick            |                 2 |               1 |               3 |
+| Conditie_4      | Siebe Corstjens       |                 2 |               1 |               3 |
+| Conditie_4      | Alia Mansouri         |                 2 |               1 |               3 |
+| Conditie_4      | Kelly Martins Barroso |                 2 |               1 |               3 |
+| Conditie_4      | Lennert Machiels      |                 1 |               1 |               2 |
+| Conditie_4      | Faith Geurts Mertens  |                 1 |               2 |               3 |
+| Conditie_4      | Ahmed Bouyahyaoui     |                 1 |               2 |               3 |
+| Conditie_4      | Guillaume Ghistelinck |                 1 |               1 |               2 |
+| Conditie_4      | Mona El Mannouchi     |                 1 |               1 |               2 |
++-----------------+-----------------------+-------------------+-----------------+-----------------+
