@@ -16,8 +16,11 @@ CSV_FILES = [
 
 # Names to exclude from the analysis
 EXCLUDED_NAMES = [
-    # "John Doe",
-    # "Jane Doe",
+    "Salematou Touré",
+    "Oliver Goudsmedt",
+    "Daoud El Abdellaoui",
+    "Alexander Naessens",
+    "Gaston Furniere"
 ]
 
 # Output folders
@@ -118,18 +121,21 @@ for username, user_df in df.groupby("username"):
 # OPTIONAL: SAMPLE TRAJECTORIES IN ONE PLOT
 # ============================================================
 
+STARTING_ELO = 450
+
 all_usernames = list(df["username"].unique())
-sample_size = min(10, len(all_usernames))
+sample_size = min(5, len(all_usernames))
 sampled_users = random.sample(all_usernames, sample_size)
+sampled_users = ["Ilias Ayadi", "Juna Stoffels", "Isaac Meziani", "Nikola Pietryk", "Yasmin El Wahabi Benkib"]
 
 plt.figure(figsize=(14, 7))
 
 for username in sampled_users:
     user_df = df[df["username"] == username].reset_index(drop=True)
-    elo_progression = user_df["current_elo"] + user_df["delta_elo"]
+    elo_progression = [STARTING_ELO] + list(user_df["current_elo"] + user_df["delta_elo"])
 
     plt.plot(
-        range(1, len(elo_progression) + 1),
+        range(len(elo_progression)),
         elo_progression,
         label=username,
         marker="o",
@@ -139,7 +145,7 @@ for username in sampled_users:
 plt.xlabel("Exercise Number")
 plt.ylabel("ELO")
 plt.title(f"ELO Trajectories – {sample_size} Random Participants")
-plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
+#plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
 plt.grid(True)
 plt.tight_layout()
 

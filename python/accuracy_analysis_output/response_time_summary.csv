@@ -1,0 +1,3 @@
+condition,mean_response_time,std_response_time
+Adaptive,11.683887283663228,1.958510477149241
+Non-Adaptive,9.540077601410934,2.1089197532869557

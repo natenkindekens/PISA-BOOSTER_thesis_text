@@ -1,0 +1,103 @@
+username,mean_response_time,condition
+Ahmed Bouyahyaoui,10.561750000000002,Adaptive
+Alana Deflin,11.92662962962963,Adaptive
+Alia Mansouri,9.77638425925926,Adaptive
+Alice Vande Vyvere,12.281513888888888,Adaptive
+Alyssa Vansweevelt,13.103694444444445,Adaptive
+Amélie Sobrie,9.77275925925926,Adaptive
+Anas El Idrissi,14.103324074074076,Adaptive
+Aroussi Maysammé,13.699861111111112,Adaptive
+Arthur Vanhauwaert,11.880060185185185,Adaptive
+Avleen Kaur,12.59311574074074,Adaptive
+Bilal Tayarsift,12.487231481481482,Adaptive
+Carlo Vetro,12.354796536796536,Adaptive
+Carmin Kivork K,11.934175925925926,Adaptive
+Charles Dobbels,13.029106481481481,Adaptive
+Charlotte De Maerteleire,14.205712962962965,Adaptive
+Dario Casado,11.977675925925926,Adaptive
+Duke Wandje,10.145083333333334,Adaptive
+Elea Sahiti,12.563236111111111,Adaptive
+Eveleen Kaur,12.440587962962963,Adaptive
+Faith Geurts Mertens,11.480921296296296,Adaptive
+Firass BenameurMoumen,12.901574074074073,Adaptive
+Guillaume Ghistelinck,8.474162037037038,Adaptive
+Ilias Ayadi,7.9268935185185185,Adaptive
+Ina Gielen,10.837222222222223,Adaptive
+Isaac Meziani,11.384814814814815,Adaptive
+Juna Stoffels,12.657032407407407,Adaptive
+Kaat Hauben,9.424351851851853,Adaptive
+Kelly Martins Barroso,11.260810185185186,Adaptive
+Laura Adams,13.609064814814815,Adaptive
+Lee Goossens,10.277796296296296,Adaptive
+Lennert Machiels,12.579944444444445,Adaptive
+Lianne Noelmans,8.652560185185186,Adaptive
+Lucas Somers,13.718921296296296,Adaptive
+Léonié Fieuw,10.42512962962963,Adaptive
+Mathijs Biesmans,11.629398148148148,Adaptive
+Mauro Geselle,9.061310185185185,Adaptive
+Maya Milissen,13.876402777777777,Adaptive
+Mila Dieu,10.858749999999999,Adaptive
+Mona El Mannouchi,12.195962962962962,Adaptive
+Nada Talla,14.243467592592593,Adaptive
+Nikola Pietryk,11.514537037037037,Adaptive
+Noah Jouret,13.664560185185186,Adaptive
+Oscar Vanhooymissen,7.9314285714285715,Adaptive
+Ranjot Singh,4.7996944444444445,Adaptive
+Remco Dick,12.669439814814815,Adaptive
+Samir Reno,9.571901234567902,Adaptive
+Sarah Ouali,14.076143518518519,Adaptive
+Siebe Corstjens,13.998765432098766,Adaptive
+Tijl Van Suetendael,11.852708333333332,Adaptive
+Victoria Oviasogie,12.470208333333334,Adaptive
+Vince Vanspauwen,13.396199074074074,Adaptive
+Yasmin El Wahabi Benkib,13.938638888888889,Adaptive
+Zack Biondolillo,11.04861111111111,Adaptive
+Alessio Patrillo,7.032439814814815,Non-Adaptive
+Alexander Carlier,6.745638888888889,Non-Adaptive
+Anis Etaoukil,10.414777777777779,Non-Adaptive
+Bram Lafosse,6.532888888888889,Non-Adaptive
+Bruce Wets,12.760921296296296,Non-Adaptive
+Célia Stauffer,6.7083055555555555,Non-Adaptive
+Edwin Ponomarenko,8.021277777777778,Non-Adaptive
+Emma Hendrikx,10.070226851851851,Non-Adaptive
+Eva-Maria Iancu,13.560055555555557,Non-Adaptive
+Felicia Barata-Labusa,10.969222222222221,Non-Adaptive
+Haytam M'Chichi,10.68886111111111,Non-Adaptive
+Henri Desmet,9.71250925925926,Non-Adaptive
+Iman Nassir,14.080212962962962,Non-Adaptive
+Izzy Crabbé,10.929925925925927,Non-Adaptive
+Jaskirat Singh,11.839990740740742,Non-Adaptive
+Joppe Stulens,6.060009259259259,Non-Adaptive
+Josephine Roelands,11.823935185185185,Non-Adaptive
+Joshea Nicole Cortes,9.377916666666666,Non-Adaptive
+Jules Dhaenens,7.814024691358025,Non-Adaptive
+Juliette Versyp,9.159625,Non-Adaptive
+Leah Decloet,10.843212962962964,Non-Adaptive
+Leandro Dormaels Tollenaers,8.641444444444446,Non-Adaptive
+Leia Kloos-Helsen,6.746462962962964,Non-Adaptive
+Lesly Kazige Mushamaka,11.462432098765433,Non-Adaptive
+Lieze Stassen,8.121606481481482,Non-Adaptive
+Lisa Van Cannegem,11.296101851851851,Non-Adaptive
+Lou Biesmans,7.938412037037036,Non-Adaptive
+Louise Thysen,11.23324537037037,Non-Adaptive
+Luchiano Sulejman,7.006615740740741,Non-Adaptive
+Lucy Adiyiah,7.120976851851852,Non-Adaptive
+Lyana Grobben,11.493370370370371,Non-Adaptive
+Mariam Kalloub,9.320953703703704,Non-Adaptive
+Matts Dedry,8.073212962962963,Non-Adaptive
+Maxim Tuerlinckx,6.790481481481481,Non-Adaptive
+Mayron De Leng,9.474734567901233,Non-Adaptive
+Mehdi Haji Boukhana,9.58375,Non-Adaptive
+Mien Vandendriessche,10.107652777777778,Non-Adaptive
+Neyla El Bouchakroudi,11.80451388888889,Non-Adaptive
+Rémy Fourneau,9.568444444444445,Non-Adaptive
+Sabrine Verschueren,13.969310185185186,Non-Adaptive
+Saphora Oudama,9.464986111111111,Non-Adaptive
+Soraya Arhunde Oghosa,10.005208333333334,Non-Adaptive
+Sores Köl,6.139319444444445,Non-Adaptive
+Theo Herman,11.384435185185184,Non-Adaptive
+Victor Naessens,8.19774537037037,Non-Adaptive
+Victor Tollet,11.621800925925927,Non-Adaptive
+Victoria Vingolato,7.774717592592593,Non-Adaptive
+Vince Ramaekers,9.325763888888888,Non-Adaptive
+Ymke Claiysse,8.650125,Non-Adaptive
