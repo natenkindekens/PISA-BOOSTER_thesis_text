@@ -78,7 +78,7 @@ How the actual score \(S_{ij}\) is computed depends on whether the child answere
 \begin{equation}
 S_{ij} = -\frac{5}{4d_i^2} \cdot t_{ij}^2 + 2
 \end{equation}
-where \(t_{ij}\) is the time the child took and \(d_i\)is the time limit for that exercise. This function has a natural interpretation. If the child answers exactly at the time limit, the score equals 0.75, which matches the expected score and produces no rating change. Answering faster yields a score above 0.75 and pushes the rating up. This means the system does not just track whether a child can solve a problem, but also how fluently they can solve it.\\ \\
+where \(t_{ij}\) is the time the child took and \(d_i\) is the time limit for that exercise. The time limits were set through discussion with the co-supervisor and the two pedagogical science students at 15 seconds for easy exercises, 20 seconds for medium exercises, and 25 seconds for difficult exercises. This function has a natural interpretation. If the child answers exactly at the time limit, the score equals 0.75, which matches the expected score and produces no rating change. Answering faster yields a score above 0.75 and pushes the rating up. This means the system does not just track whether a child can solve a problem, but also how fluently they can solve it.\\ \\
 The rating then determines which exercises the child sees. Exercises are categorised into three difficulty levels (easy, medium, and difficult), and the system selects from a probability distribution that shifts as the rating increases:
 \begin{table}[H]
 \centering
