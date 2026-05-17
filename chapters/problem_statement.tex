@@ -1,55 +1,7 @@
 % !TeX root = ../thesis.tex
 \chapter{Problem Statement}
-
-%In recent years, many digital tools have been developed to support arithmetic
-%learning in primary education. Platforms such as \textit{Automatus},
-%\textit{Rekentuin}, and \textit{Prodigy Math} have shown that adaptive practice
-%and gamification can increase motivation and improve arithmetic fluency. At the
-%same time, researchers studying arithmetic learning rely on controlled experiment
-%software such as OpenSesame \cite{mathot_opensesame_2012} to run their studies.
-%
-%The problem is that these two worlds do not connect well. Classroom tools are not
-%built for research: they offer little control over experimental conditions and do
-%not collect the data that researchers need. Research tools, on the
-%other hand, are not built for classrooms: they require technical knowledge to set
-%up, look unappealing, and have no gamification or story. This makes it hard to
-%keep children motivated across multiple sessions, which directly affects the
-%quality of the research.
-%
-%This matters because educational research depends on ecological validity. A child
-%who loses motivation after two sessions, or who is distracted by an unfamiliar and
-%ugly interface, is not a reliable research participant. Right now, researchers are
-%forced to choose between methodological control and motivational design, even
-%though both are necessary.
-%
-%\begin{tcolorbox}[colback=red!5!white, colframe=red!60!black, title=\textbf{Problem}]
-%Existing digital arithmetic tools serve either classroom practice or controlled
-%research, but not both. Classroom tools lack the configurability and data
-%collection needed for research. Research tools lack the motivational design
-%needed to keep children engaged across multiple sessions. This forces
-%researchers to compromise on either scientific rigour or ecological validity.
-%\end{tcolorbox}
-%
-%\begin{tcolorbox}[colback=blue!4!white, colframe=blue!40!black, title=\textbf{Goal}]
-%\textbf{Design, develop, and evaluate a web-based arithmetic learning platform
-%that works for both classroom use and educational research.}
-%The platform, RekenRangers, combines a gamified and child-friendly environment
-%with the configurability needed for controlled experiments. Features such as
-%metacognitive self-assessment prompts, adaptive difficulty, timer settings, and
-%structured exercise sequences can all be configured by a teacher or researcher
-%without any programming knowledge. The tool is evaluated in two ways:
-%quantitatively, by replicating an existing study on metacognition in arithmetic
-%to check whether the tool produces results consistent with controlled research
-%software; and qualitatively, by surveying teachers, researchers, and students
-%on the usability and motivation the platform offers.
-%\end{tcolorbox}
-%
-%RekenRangers is not meant to replace existing classroom tools or research
-%software. The goal is to fill the gap between them --- a platform that is
-%both engaging enough to keep children motivated, and flexible enough to support
-%meaningful research.
-
-Chapters 2 and 3 approached the same gap from two directions. Chapter 2 showed that the research tools available today offer strong scientific foundations but create experiences that are unsuitable for children in a classroom. Chapter 3 showed that the exercise tools children already use deliver exactly the kind of engaging, adaptive, child-friendly experience that research tools lack, but fall short on the data tracking, experimental control, and flexibility that researchers need.\\ \\
+\label{chp:problem-statement}
+Chapters \ref{chp:background} and \ref{chp:exercise-tools} approached the same gap from two directions. Chapter \ref{chp:background} showed that the research tools available today offer strong scientific foundations but create experiences that are unsuitable for children in a classroom. Chapter \ref{chp:exercise-tools} showed that the exercise tools children already use deliver exactly the kind of engaging, adaptive, child-friendly experience that research tools lack, but fall short on the data tracking, experimental control, and flexibility that researchers need.\\ \\
 Figure~\ref{fig:full-grid} made this visible as a single image. The grid splits cleanly in two. No existing tool fills both halves. Researchers who want to run a controlled arithmetic study in a classroom are forced to choose: either they use a research tool and accept that the children will be staring at a black screen with no motivation, no story, and no adaptivity, or they use a classroom tool and accept that they cannot control the experimental conditions, cannot collect fine-grained data, and cannot structure the study the way their research design requires.
 
 \begin{tcolorbox}[
@@ -84,10 +36,10 @@ The tool is evaluated in two ways:
     title=Research Questions
 ]
 \begin{enumerate}
-    \item[\textbf{RQ1}] Can a single web-based platform satisfy both the exercise-tool properties (adaptivity, engagement, feedback, personalisation, accessibility, user friendliness) and the research-tool properties (data tracking, experimental control, reproducibility, flexibility, reliability, ease of setup) identified in Chapters 2 and 3?
+    \item[\textbf{RQ1}] Can a single web-based platform satisfy both the exercise-tool properties (adaptivity, engagement, feedback, personalisation, accessibility, user friendliness) and the research-tool properties (data tracking, experimental control, reproducibility, flexibility, reliability, ease of setup) identified in Chapters \ref{chp:background} and \ref{chp:exercise-tools}?
     \item[\textbf{RQ2}] Can the platform support a real multi-session classroom experiment with over 100 participants across multiple conditions, while producing complete and reliable data and keeping children engaged throughout the study?
     \item[\textbf{RQ3}] How do children, teachers, and researchers evaluate the usability, engagement, and configurability of the platform?
 \end{enumerate}
 \end{tcolorbox}
 
-\noindent RQ1 is a design question: it asks whether the twelve properties can coexist in a single tool, and it is answered through the design and implementation described in Chapter 5. RQ2 is an empirical question: it tests whether the tool actually works as a research instrument by examining its performance during a real classroom study. Including the completeness and quality of the collected data, the behaviour of the adaptive system, and the sustained engagement of the participants across sessions. RQ3 is a qualitative question: it captures whether the tool delivers on its promise from the perspective of the people who used it. Together, these three questions cover the full scope of the thesis. The experimental setup for RQ2 and RQ3 is described in Chapter 6, and the results are presented in Chapter 7.
+\noindent RQ1 is a design question: it asks whether the twelve properties can coexist in a single tool, and it is answered through the design and implementation described in Chapter \ref{chp:rekenrangers}. RQ2 is an empirical question: it tests whether the tool actually works as a research instrument by examining its performance during a real classroom study. Including the completeness and quality of the collected data, the behaviour of the adaptive system, and the sustained engagement of the participants across sessions. RQ3 is a qualitative question: it captures whether the tool delivers on its promise from the perspective of the people who used it. Together, these three questions cover the full scope of the thesis. The experimental setup for RQ2 and RQ3 is described in Chapter \ref{chp:experimental-setup}, and the results are presented in Chapter \ref{chp:results}.
