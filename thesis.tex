@@ -39,17 +39,20 @@
 
 % === Abstract (required) ===
 \begin{abstract}
-This thesis explores how child-driven personalization in arithmetic learning applications
-can foster metacognitive awareness and improve mathematical performance.
-A prototype web application will be developed to experimentally test this concept.
+Digital tools play an increasingly important role in primary school education, and arithmetic learning is no exception. Two distinct categories of tools have emerged in this space. Classroom exercise platforms such as Automatus and Rekentuin offer adaptive practice, gamification, and child-friendly design that keep children engaged across daily use. Research tools such as OpenSesame and PsychoPy give educational psychologists the experimental control, data logging, and reproducibility they need to study how children actually learn arithmetic. The problem is that these two categories have evolved in isolation: classroom tools lack the configurability and data collection required for rigorous research, while research tools lack the motivational design and accessibility needed to keep children engaged across multiple sessions in a classroom setting. Researchers studying arithmetic learning are therefore forced to compromise on either scientific control or ecological validity, a compromise that directly affects the quality of the data their studies produce.
+
+This thesis introduces RekenRangers (MathRangers), a web-based arithmetic learning platform built to bridge this gap. The tool combines a gamified, child-friendly environment built around a safari theme with the configurability needed for controlled experiments. Teachers and researchers can set up complex multi-block studies without writing any code, while children encounter the same tool as a regular practice environment with coins, puzzles, and animals to rescue. Twelve properties of a good arithmetic tool, six from the research side and six from the classroom side, are defined in the first part of the thesis and used as a structured framework for the design of the platform. RekenRangers was developed in close collaboration with co-supervisor Elien Bellon and with two master's students in pedagogical sciences, Eline T'joen and Kiara Willems, whose joint thesis project served as a concrete test case for the tool.
+
+The platform was evaluated through its deployment in a real classroom study with 107 third-grade children across seven primary schools in Flanders, conducted over four training days in four experimental conditions. The evaluation combined behavioural data from the deployment, qualitative feedback from the two researchers who ran the study, and a short questionnaire completed by 45 of the participating children. The results show that RekenRangers can support a real multi-session classroom experiment from start to finish: 21,522 exercise records were collected and exported in structured form without preprocessing, no data was permanently lost, and children remained visibly engaged. The gamification system was used voluntarily by nearly all participants, with 98.5\% of earned coins spent on puzzles and 99\% of children completing at least one. The questionnaire results confirm that children experienced the tool as engaging and easy to use. The adaptive difficulty system produced meaningful differentiation between ability levels but did not converge on its target accuracy, indicating that the algorithm requires further calibration. The researcher feedback was positive, with the important caveat that both researchers were involved in the development of the tool.
+
+The thesis concludes that bridging the gap between classroom exercise tools and controlled research software is achievable in principle, while making the remaining trade-offs and open problems explicit. The most important limitations concern the flexibility of the tool, which cannot match the open-ended configurability of a programming environment, the adaptive algorithm, which needs further tuning, and several underdeveloped properties such as personalisation and feedback. These directions are discussed in the future work section. RekenRangers is not a finished product, but it is a working demonstration that the two worlds can be brought closer than they currently are.
 \end{abstract}
 
 
-
+\include{chapters/symbols_and_abbr}
 
 % === Main content ===
 \mainmatter
-\include{chapters/symbols_and_abbr}
 \include{chapters/introduction}
 \include{chapters/background_and_motivation}
 \include{chapters/exercise_tools}
