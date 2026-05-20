@@ -10,7 +10,7 @@ Part of what makes this field relevant today is that the numbers coming out of l
 
 The stakes are higher than just test scores. As McNeil et al. \cite{ansari2025arithmetic} put it: ``High-quality mathematics education not only improves life outcomes for individuals but also drives innovation and progress across society''. They show that the arithmetic skills a child builds in primary school are not just useful for that year, but they form the foundation for everything that comes after \cite{ansari2025arithmetic}. Early numeracy skills are robust predictors of later mathematical achievement \cite{ansari2025arithmetic}, with strong correlations observed between early assessments and standardized test scores in later years. Children who fall behind in arithmetic early tend to stay behind, and catching up becomes progressively harder as the curriculum moves on \cite{ansari2025arithmetic}.
 
-\begin{figure}[ht]
+\begin{figure}
     \centering
 
     \begin{tikzpicture}
@@ -117,7 +117,7 @@ That leaves \textbf{ease of setup}, where PsychoPy faces the same fundamental ch
 
 The interface itself reinforces this. A first-time user is confronted with terminology like Routines, Components, Backends, and Monitor configurations: concepts that make sense to someone with a programming background but are not self-evident to a researcher encountering the tool for the first time. The Builder GUI is genuinely well-designed and capable (Figure~\ref{fig:psychopy-ui}), but where OpenSesame attempts to hide the Python layer behind a familiar drag-and-drop tree, PsychoPy keeps it closer to the surface. The result is similar to OpenSesame but shifted further along the technical axis: an excellent tool for a researcher who already knows Python or is willing to learn it, but a steep entry point for anyone else.
 
-\begin{figure}[ht]
+\begin{figure}
 \centering
 \includegraphics[width=0.85\textwidth]{figures/psychopy_builder.png}
 \caption{The PsychoPy Builder interface. Routines are displayed as timelines, and each Component maps onto a set of Python parameters. For experiments that exceed the Builder's built-in Components, researchers insert Code Components containing raw Python, which effectively turns the study into a programming project.}
@@ -126,7 +126,7 @@ The interface itself reinforces this. A first-time user is confronted with termi
 
 At this point, a pattern is becoming visible. Both OpenSesame and PsychoPy satisfy the core research requirements but both run into the same wall when it comes to ease of setup. Figure~\ref{fig:research-tool-grid} summarises this comparison. The six research-tool properties from Section \ref{sec:research-properties} are listed as columns, and each tool is evaluated per property. The first five columns are green; the last one is not. This grid will be extended in Chapter \ref{chp:exercise-tools} when the exercise-tool properties are introduced.
 
-\begin{figure}[ht]
+\begin{figure}
 \centering
 \includegraphics[width=0.85\textwidth]{figures/grid_research_new.png}
 \caption{Comparison of OpenSesame and PsychoPy against the six research-tool properties from Section \ref{sec:research-properties}. Both tools satisfy all but the last.}
@@ -134,13 +134,14 @@ At this point, a pattern is becoming visible. Both OpenSesame and PsychoPy satis
 \end{figure}
 
 \subsection{Shared limitations}
+\label{sec:shared-limitations}
 The previous sections have shown that OpenSesame and PsychoPy are strong research tools. On five of the six properties defined in Section \ref{sec:research-properties} they deliver exactly what a researcher needs: clean data tracking, full experimental control, reproducible setups, flexible designs, and reliability. But the picture changes completely when you step back and ask a different question: what is it actually like for a child to sit in front of one of these tools?
 
 The answer, in most cases, is that it is not a pleasant experience. A typical arithmetic experiment built in OpenSesame or PsychoPy presents the child with white text on a black screen, one problem at a time, with no story, no colour, no reward, and no sense of progress (see example Figure \ref{fig:black_screen}). There is no character guiding them through the session or puzzle to unlock after ten correct answers. The experiment simply moves from one trial to the next until it is done. For a single short session in a quiet lab, this can work. But arithmetic research often takes place in classrooms, across multiple sessions spread over days or weeks, with children who are seven or eight years old. In that context, a black screen with numbers on it is not enough.
 
 This is not an oversight by the developers of these tools. OpenSesame and PsychoPy were built to be general-purpose experiment builders, and they do that job well. The problem is the one identified in the previous sections: anything beyond the bare stimulus-response loop, gamification, a narrative wrapper, a child-friendly login, has to be built from scratch by the researcher, in Python. Because of the ease-of-setup wall, the researchers who need these features cannot build them. They know exactly what kind of experience they want the child to have, exercises that adapt to the child's level, a colourful interface that feels like a game, metacognitive prompts wrapped in a story. But translating that vision into working code is a skill most of them do not have, and hiring or collaborating with a developer for every study is neither practical nor scalable.
 
-\begin{figure}[ht]
+\begin{figure}
 \centering
 \includegraphics[width=0.65\textwidth]{figures/zwart_scherm.png}
 \caption{Example of a stimulus presentation screen created in OpenSesame, showing a simple arithmetic task with multiple-choice response options.}
