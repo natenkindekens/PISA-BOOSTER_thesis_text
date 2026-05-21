@@ -55,9 +55,9 @@ The combination of the general settings and the research-specific controls means
 \end{figure}
 
 \subsection{Reproducibility}
-Section \ref{sec:research-properties} defined reproducibility as the ability to save, share, and rerun the exact configuration of an experiment. RekenRangers supports this through a JSON-based export and import system. Every setting described in the previous section, from the operation selection to the research mode rules to the exclusion lists, can be exported to a single JSON file with one click. A second researcher who wants to replicate the study can import that file into their own group, and every setting is restored exactly as it was. This idea was suggested by Tijs Bellefroid and ensures that sharing an experimental setup is as simple as sharing a file.
+Section \ref{sec:research-properties} defined reproducibility as the ability to save, share, and rerun the exact configuration of an experiment. RekenRangers supports this through a JSON-based export and import system, an idea suggested by Tijs Bellefroid. Every setting described in the previous section, from the operation selection to the research-mode rules to the exclusion lists, can be exported to a single JSON file with one click. A second researcher who wants to replicate the study can import that file into their own group, and every setting is restored exactly as it was. Sharing an experimental setup is then as simple as sharing a file.
 
-There is an inherent degree of randomness in the system, particularly in the selection of which specific exercise is presented next within the constraints defined by the settings. Two children with the same configuration will not see the exact same sequence of problems. However, the settings guarantee that the structural properties of the session are identical: the same operations, the same difficulty distribution, the same exclusion rules, the same feedback conditions. This is the level of reproducibility that matters for between-group comparisons, where the experimental conditions need to be equivalent rather than literally identical.
+One important consideration: two children configured with the same settings will not necessarily see the same sequence of exercises. The settings constrain which exercises are allowed, but the choice of which specific exercise comes next is partly random within those constraints. This is reproducibility at the level of experimental conditions, not at the level of literal trial-by-trial identity, which is the level that matters for between-group comparisons.
 
 \subsection{Flexibility}
 \label{sec:flexibility}
@@ -69,12 +69,12 @@ The teacher dashboard also provides tools for managing progress through a sequen
 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{figures/sequence-screen.png}
-\caption{The exercise sequence configuration screen. Each row represents a block with its own settings for number of exercises, metacognitive prompts, difficulty mode, and operations. Blocks can be added, edited, or removed, and student progress can be reset individually or for the entire group.}
+\includegraphics[width=0.8\textwidth]{figures/sequence-screen-new.png}
+\caption{The exercise sequence configuration screen. Each row represents a block with its own settings. Blocks can be added, edited, or removed, and student progress can be reset individually or for the entire group.}
 \label{fig:sequence-screen}
 \end{figure}
 
-It is important to be honest about the limits of this approach. The sequence system makes RekenRangers more flexible than any of the exercise tools discussed in Chapter \ref{chp:exercise-tools}, and for the kinds of studies it was designed to support, the configurability is sufficient. But it does not and cannot match the flexibility of a general-purpose programming environment. A researcher who needs a trial structure that does not fit the block model, a custom adaptive algorithm, or a stimulus type that goes beyond arithmetic has no way to implement that within the current tool. This is the fundamental trade-off between flexibility and ease of setup that Section \ref{sec:research-properties} already anticipated: making a tool accessible to non-programmers necessarily limits the depth of customisation it can offer. The implications of this trade-off, and the specific kinds of studies that fall outside RekenRangers' current reach, are discussed further in Section \ref{sec:limitations}.
+The sequence system tries to make RekenRangers more flexible than any of the exercise tools discussed in Chapter \ref{chp:exercise-tools}, and for the kinds of studies it was designed to support, the configurability is sufficient. It does not, however, match the flexibility of a general-purpose programming environment: studies that require trial structures outside the block model, custom adaptive algorithms, or stimulus types beyond arithmetic cannot be expressed within the current tool. This reflects what Lidwell, Holden, and Butler call the ``flexibility--usability tradeoff'': ``as the flexibility of a system increases, the usability of the system decreases'' \cite{lidwell2010universal}. The limits it imposes on RekenRangers are discussed further in Section \ref{sec:limitations}.
 
 \subsection{Reliability}
 Section \ref{sec:research-properties} described reliability as having two dimensions: the tool must produce trustworthy measurements, and it must keep running under real-world conditions. RekenRangers addresses both.
