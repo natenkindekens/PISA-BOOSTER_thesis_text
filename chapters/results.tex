@@ -18,24 +18,24 @@ The CSV export functioned as designed and could be loaded directly into data ana
 The adaptive difficulty system described in Section~\ref{sec:adaptivity} was used in two of the four experimental conditions (C and D). The non-adaptive conditions (A and B) presented exercises drawn from a balanced mix of all three difficulty levels in a semi-random order. This section examines how the adaptive system behaved in practice using both quantitative data and qualitative observations.
 
 \subsection{Elo trajectories}
-Figure~\ref{fig:elo-trajectories} shows the Elo trajectories of five randomly selected participants from the adaptive conditions over the course of their 216 exercises. All five children started at the initial rating of 450, but their paths diverge quickly. The strongest participant (blue) climbed rapidly and reached the ceiling of 1000 within the first 50 exercises, remaining there for the rest of the study. Two others (green and orange) followed a slower upward trend, stabilising in the 800--950 range by the end of the training period. The remaining two (red and purple) settled in the 600--800 range, with visible fluctuations that reflect the system adjusting to their performance on individual exercises.
+Figure~\ref{fig:elo-trajectories} shows the Elo trajectories of a larger sample of participants from the adaptive conditions over the course of their 216 exercises. All children started at the initial rating of 450, but their paths diverge quickly, and four broad patterns become visible across the sample.
 
-Two things are worth noting. First, the trajectories are not smooth curves but jagged paths with frequent ups and downs. This is expected behaviour: the Elo system responds to every exercise, and a single mistake produces an immediate dip. The overall trend, however, is clearly readable in each case. Second, the five trajectories end up at genuinely different levels, which means the system is capturing real individual differences in ability rather than pushing everyone toward the same point.
+First, the ceiling of 1000 was reached: a number of the strongest participants climbed rapidly during the first session and stayed at the ceiling for the rest of the training period. Second, and more striking, a sizeable subgroup of participants got stuck around a rating of 600. This value sits on the boundary between difficulty zones 3 and 4 (see Table~\ref{tab:difficulty-zones}), and the implications of this observation are discussed in detail in Chapter~\ref{chp:discussion}. Third, the trajectories are not smooth curves but jagged paths with frequent ups and downs, which is expected behaviour: the Elo system responds to every exercise, so a single mistake produces an immediate dip. The overall trend remains clearly readable in each case. Fourth, not every participant ended up at either the ceiling or the 600 plateau. A range of intermediate trajectories is also visible, which means the system is capturing real individual differences in ability rather than pushing everyone toward the same point.
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=\textwidth]{figures/sample_trajectories.png}
-\caption{Elo rating trajectories of five randomly selected participants from the adaptive conditions. All participants started at a rating of 450. The trajectories illustrate how the system differentiates between children of different ability levels over the course of 216 exercises.}
+\includegraphics[width=0.85\textwidth]{figures/sample_trajectories_all.png}
+\caption{Elo rating trajectories of twenty randomly selected participants from the adaptive conditions. All participants started at a rating of 450. The trajectories illustrate how the system differentiates between children of different ability levels over the course of 216 exercises.}
 \label{fig:elo-trajectories}
 \end{figure}
 
 \subsection{Final Elo distribution}
-Figure~\ref{fig:elo-distribution} shows the distribution of final Elo scores across all participants in the adaptive conditions. The distribution spans from approximately 500 to 1000, with a main cluster around 600--700 and a second, distinct peak at the maximum rating of 1000. The main cluster sits in difficulty zone 4 (600--800), meaning these children were predominantly receiving difficult and medium exercises by the end of the training. The peak at 1000 represents children who reached the ceiling and stayed there. For these children, the exercise pool could no longer offer sufficient challenge, as all exercises were already drawn from the highest difficulty level.
+Figure~\ref{fig:elo-distribution} shows the distribution of final Elo scores across all participants in the adaptive conditions. The distribution spans from approximately 500 to 1000 and contains two distinct peaks. The first peak sits around 600--650 and is consistent with the pattern observed in the trajectories: a sizeable group of participants ended up oscillating around the boundary between difficulty zones 3 and 4, with their final rating reflecting the side of the boundary they happened to land on. The second peak is at the maximum rating of 1000 and represents children who reached the ceiling and stayed there. For these children, the exercise pool could no longer offer sufficient challenge, as all exercises were already drawn from the highest difficulty level.
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.8\textwidth]{figures/elo_distribution_histogram.png}
-\caption{Distribution of final Elo scores across participants in the adaptive conditions. The main cluster around 600--700 corresponds to difficulty zone 4. The peak at 1000 represents children who reached the rating ceiling.}
+\includegraphics[width=0.85\textwidth]{figures/elo_distribution_histogram.png}
+\caption{Distribution of final Elo scores across participants in the adaptive conditions.}
 \label{fig:elo-distribution}
 \end{figure}
 
@@ -45,7 +45,7 @@ However, the adaptive system did not converge on the intended 75\% accuracy targ
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=\textwidth]{figures/accuracy_distribution_histogram.png}
+\includegraphics[width=0.85\textwidth]{figures/accuracy_distribution_histogram.png}
 \caption{Distribution of per-student accuracy rates for the adaptive and non-adaptive conditions. The dashed line marks the 75\% target accuracy. The adaptive group (mean 68\%) falls below the target, while the non-adaptive group (mean 77\%) lands close to it.}
 \label{fig:accuracy-distribution}
 \end{figure}
@@ -55,7 +55,7 @@ Figure~\ref{fig:response-time-distribution} shows the distribution of mean respo
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=\textwidth]{figures/response_time_distribution.png}
+\includegraphics[width=0.85\textwidth]{figures/response_time_distribution.png}
 \caption{Distribution of mean response times per student for the adaptive and non-adaptive conditions. The adaptive group clusters toward longer response times, consistent with the scoring function pushing toward the time limit as an equilibrium point.}
 \label{fig:response-time-distribution}
 \end{figure}
