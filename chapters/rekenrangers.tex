@@ -176,37 +176,36 @@ Personalisation is the property where RekenRangers has the most room for growth.
 What is in place are the choices the platform gives the child. When enabled by the teacher or researcher, children can choose for themselves which operation they want to practise, what difficulty level they prefer, and whether they want to see a timer. As discussed in Section~\ref{sec:exercise-properties}, this kind of choice can support a sense of ownership. Each child also works with their own account, so that their coin balance and puzzle progress are personal to them, and a child who has saved up coins and completed three animal puzzles sees a different puzzle screen than a classmate who just started. This gives some sense of individual identity within the platform, even without an avatar.
 
 \subsection{Accessibility}
-RekenRangers is a web application hosted on a KU Leuven server and accessible at \texttt{rekenrangers.cs.kuleuven.be}. It runs in any modern browser without requiring software installation, plugins, or account creation through an external service. This means the tool works on the laptops, tablets, Chromebooks, and even phones that schools and families already have. The only requirements are an internet connection and a browser. There is currently no dedicated mobile app, and the interface is not specifically optimised for smaller screens, but both are realistic extensions for future development.
+RekenRangers is a web application hosted on a KU Leuven server and accessible at \texttt{https://rekenrangers.cs.kuleuven.be/}. It runs in any modern browser without requiring software installation, plugins, or account creation through an external service. This means the tool works on the laptops, tablets, Chromebooks, and even phones that schools and families already have. The only requirements are an internet connection and a browser. There is currently no dedicated mobile app, and the interface is not specifically optimised for smaller screens, but both are realistic extensions for future development.
 
-Access to the platform is managed through a two-step login system designed to be usable by young children without adult help. The child first enters a group code, which identifies their class or research group. They then select their name from a list and enter a personal animal code: a sequence of four animal icons that serves as a child-friendly alternative to a traditional password. Figure~\ref{fig:accessibility} illustrates both the login screen and the printable cards.
+Access to the platform is managed through a two-step login system designed to be usable by young children without adult help. The child first enters a group code, which identifies their class or research group. They then select their name from a list and enter a personal animal code: a sequence of four animal icons that serves as a child-friendly alternative to a traditional password.
 
-\begin{figure}
+latex\begin{figure}
     \centering
     \begin{subfigure}[t]{\textwidth}
         \centering
         \includegraphics[width=0.8\textwidth]{figures/animal-login.png}
-        \caption{The student login screen. After selecting their name, the child enters their personal animal code by clicking four animal icons in the correct order.}
+        \caption{Student login screen. After selecting their name, the child enters a personal animal code by clicking four animal icons in the correct order.}
         \label{fig:animal-login}
     \end{subfigure}
-    \hfill
+    \vspace{0.5cm}
     \begin{subfigure}[t]{\textwidth}
-         \vspace{0.5cm} 
         \centering
         \includegraphics[width=0.4\textwidth]{figures/login-cards.png}
-        \caption{Printable login cards generated through the teacher dashboard. Each card shows the child's name, group code, and personal animal code, and can be taken home for use outside the classroom.}
+        \caption{Printable login cards. Each card shows the child's name, group code, and personal animal code.}
         \label{fig:login-cards}
     \end{subfigure}
-    \caption{The RekenRangers login system. Children access the platform using a group code and a personal animal code, both provided through printable cards distributed by the teacher or researcher.}
+    \caption{The RekenRangers login system.}
     \label{fig:accessibility}
 \end{figure}
 
-Teachers and researchers generate these cards through the group management screen in the teacher dashboard. The cards can be printed and handed out in class, and since they contain everything a child needs to log in, they also enable use at home. This low-threshold approach to access means that RekenRangers can serve as both a classroom tool and a home practice tool without any additional setup.
+Teachers and researchers generate these cards through the group management screen in the teacher dashboard. The cards can be printed and handed out in class, and since they contain everything a child needs to log in, they also enable use at home. Figure~\ref{fig:accessibility} shows the login screen and the printable cards together. This low-threshold approach to access means that RekenRangers can serve as both a classroom tool and a home practice tool without any additional setup.
 
 \subsection{User friendliness}
 The final exercise-tool property is user friendliness, and for RekenRangers this is less a single feature than a principle that runs through every screen of the application. The target audience is children between seven and eleven years old, and every interface element was designed with that in mind. Buttons are large and clearly labelled, navigation follows a simple top-to-bottom flow, and the visual language uses colours, icons, and illustrations rather than relying on text. All text that does appear is written in simple, child-appropriate Dutch.
 
 To help children get started without needing an adult to explain the tool, RekenRangers includes an interactive demo mode. The demo walks the child through the full exercise flow step by step: how to read and answer an exercise, how to submit their answer, how the coin reward works, and how to navigate to the puzzle screen. When the metacognitive self-assessment setting is enabled, a separate version of the demo is available that also explains the smiley-based confidence judgement and what the feedback on it means. The demo can be replayed at any time, so a child who is unsure about something mid-session can revisit the explanation without having to ask for help.
 
-One specific design decision worth mentioning is that the entire child-facing interface can be operated using only the keyboard. Answers are typed in directly, smileys are selected with the f,g,h,j keys, and puzzle pieces are bought with the spacebar. This was a deliberate choice. In pilot sessions, we observed that mouse and trackpad interactions introduced variability in response times that had nothing to do with arithmetic ability. By making the keyboard the primary input method, the tool removes a source of noise from the data, which matters both for the child's experience and for the quality of the research data collected.
+One specific design decision worth mentioning is that the entire child-facing interface can be operated using only the keyboard. Answers are typed in directly, smileys are selected with the f, g, h, j keys, and puzzle pieces are bought with the spacebar. This choice was made in consultation with Elien Bellon, and is functionally closer to a piece of experimental control than to a usability feature: it ensures that when research mode is active and the mouse is disabled, every interaction the child needs is still reachable.
 
-The goal behind all of these choices is the same one that Section \ref{sec:exercise-properties} identified through cognitive load theory \cite{sweller1988cognitive}: the interface should be invisible. Every moment a child spends figuring out where to click or what a button means is a moment they are not spending on arithmetic. A well-designed exercise tool is one where the child forgets they are using a tool at all.
+Across all of these choices, the goal is the one identified in Section \ref{sec:exercise-properties}: an interface that stays out of the child's way, so that the cognitive effort the child spends is spent on the arithmetic.
