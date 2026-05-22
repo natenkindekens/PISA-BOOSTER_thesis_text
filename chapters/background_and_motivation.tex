@@ -179,6 +179,38 @@ If the research tool were also used outside of the experiment, for regular class
 \subsection{The bottom line}
 All three mechanisms point in the same direction. A research tool that is ecologically valid, motivationally engaging, and familiar to the children who use it is not a luxury or a nice-to-have. It is a prerequisite for producing data that accurately reflects what it claims to measure. In short: a better tool means better research. The question, then, is where to find such a tool. The natural place to look is at the platforms children already use for arithmetic practice in classrooms. That is the direction taken in Chapter \ref{chp:exercise-tools}.
 
-\section{A concrete example: the Bellon et al. studies}
+\section{A concrete example}
 \label{sec:bellon-studies}
+ 
+The previous section argued, on theoretical and general empirical grounds, that a research tool offering little variation, reward, or sense of progress amplifies the motivation problem across multiple sessions. It is worth grounding that argument in a concrete case. This section looks at one recent master's thesis that ran a multi-session arithmetic training in OpenSesame, the kind of bare stimulus-response setup described in Section~\ref{sec:shared-limitations}. The data from that study are limited, and the patterns described below are at the level of eyeballing rather than formal statistical testing. Still, they offer a concrete illustration of the motivation drop predicted in the previous section.\footnote{The study discussed here is an unpublished master's thesis \cite{baeten2025}. Its results have not undergone peer review, and the patterns reported below should therefore be interpreted with appropriate caution. They are used here as an illustration of a mechanism, not as a definitive empirical claim.}
+ 
+Baeten \cite{baeten2025} studied the relationship between metacognitive monitoring and the arithmetic learning process in 161 third-grade children. To produce a learning process, the children completed a four-day arithmetic training built in OpenSesame, solving the same set of two-digit multiplication exercises once per day across four consecutive school days. Each daily session consisted of 64 items, presented as white text on a black screen with feedback after every answer. This is exactly the type of multi-session, low-engagement experiment that Section~\ref{sec:why-this-matters} identified as being at risk of measuring motivation rather than mathematics.
+ 
+The thesis itself notes this risk. In its discussion of limitations, the author observes that having children complete the same task on four consecutive days can reduce task interest, and that accuracy appeared to stagnate after the second training day rather than continuing to improve \cite{baeten2025}. The thesis also already proposes a partial solution: it suggests that follow-up research could use rewards that depend on the participants' performance, so that children are sufficiently reinforced \cite{baeten2025}. To examine the within-day pattern more closely, the data from the second training day were analysed session by session. Each training day was divided into four successive sessions of sixteen items, and average response time and average accuracy were computed for each session. The result is shown in Figure~\ref{fig:motivation-drop-day2}.
+ 
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/rt_by_session_day2.png}
+        \caption{Average response time per session.}
+        \label{fig:rt-day2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/accuracy_by_session_day2.png}
+        \caption{Average accuracy per session.}
+        \label{fig:accuracy-day2}
+    \end{subfigure}
+    \caption{Within-day change across the four sessions of training day~2 in the arithmetic training of Baeten \cite{baeten2025}. As the day progresses, children answer faster while becoming less accurate.}
+    \label{fig:motivation-drop-day2}
+\end{figure}
+ 
+The two panels point in the same direction. After a small initial rise, the children's average response time falls steadily over the day, from 17.80 seconds in the second session down to 14.95 seconds in the fourth. If this were the only trend, it could be read as a sign of practice or growing fluency. But it is accompanied by the opposite movement in accuracy: the proportion of correct answers drops from 68.4\% in the first session to 60.2\% in the fourth. Children are not getting faster because they are getting better; they are getting faster while getting worse. That combination, shorter response times together with falling accuracy, is consistent with children rushing through the task: clicking quickly to reach the end rather than working through each problem. It appears to be the within-day counterpart of the motivation drop discussed in Section~\ref{sec:why-this-matters}, and it shows up already on the second of four training days.
+ 
+This reading fits what experienced arithmetic researchers report seeing in practice. Bellon (personal communication, 2025) describes three converging signals of waning engagement in this kind of multi-session study. The first is observational: testers notice changes in children's attitude and involvement, such as less task-focused behaviour and less sustained effort. The second is in the behavioural data itself, where disengagement leaves traces such as sudden drops in accuracy, exercises skipped by clicking through quickly, very short response times, and sometimes nonsense answers. The third concerns the learning trajectories: where one would ideally expect gradual progress across training days, that progress is often absent or only weak. The faster-but-less-accurate pattern in Figure~\ref{fig:motivation-drop-day2} is broadly in line with these signals.
+ 
+The lesson here is not that the study was poorly designed. The training was carefully constructed and ran on a capable, widely used research platform, and the thesis itself anticipated the motivation problem and proposed a reward-based fix. The point is rather that delivering such a fix is left entirely to the researcher. A research tool that provided engagement and performance-based rewards by default would lower that barrier, so that addressing the motivation drop does not depend on the individual researcher's programming effort.
+ 
 
