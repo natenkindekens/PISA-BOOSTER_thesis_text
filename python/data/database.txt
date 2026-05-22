@@ -4,7 +4,7 @@
 +-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
 | condition_label | n_students | mean_unused_coins | mean_spent_coins | mean_pct_spent | students_who_spent_nothing | students_spent_half_or_more |
 +-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
-| Conditie_1      |         27 |              11.3 |            659.8 |           98.3 |                          0 |                          27 |
+| Conditie_1      |         23 |              11.8 |            634.1|           98.2 |                          0 |                          23 |
 +-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
 
 +-----------------+-----------------------------+--------------+-------------+--------------+-----------+-----------------+
@@ -14,7 +14,6 @@
 | Conditie_1      | Lesly Kazige Mushamaka      |           28 |         480 |          508 |      94.5 |              26 |
 | Conditie_1      | Lisa Van Cannegem           |           17 |         645 |          662 |      97.4 |              33 |
 | Conditie_1      | Emma Hendrikx               |           14 |         600 |          614 |      97.7 |              30 |
-| Conditie_1      | Daoud El Abdellaoui         |           18 |         750 |          768 |      97.7 |              60 |
 | Conditie_1      | Mariam Kalloub              |           17 |         725 |          742 |      97.7 |              47 |
 | Conditie_1      | Soraya Arhunde Oghosa       |           15 |         660 |          675 |      97.8 |              52 |
 | Conditie_1      | Victoria Vingolato          |           16 |         765 |          781 |      98.0 |              51 |
@@ -23,18 +22,15 @@
 | Conditie_1      | Célia Stauffer              |           11 |         705 |          716 |      98.5 |              47 |
 | Conditie_1      | Izzy Crabbé                 |           10 |         645 |          655 |      98.5 |              33 |
 | Conditie_1      | Bruce Wets                  |            6 |         410 |          416 |      98.6 |              29 |
-| Conditie_1      | Salematou Touré             |           12 |         990 |         1002 |      98.8 |              66 |
 | Conditie_1      | Anis Etaoukil               |            7 |         600 |          607 |      98.8 |              33 |
 | Conditie_1      | Leia Kloos-Helsen           |            7 |         720 |          727 |      99.0 |              58 |
 | Conditie_1      | Victor Tollet               |            5 |         550 |          555 |      99.1 |              31 |
 | Conditie_1      | Ymke Claiysse               |            7 |         735 |          742 |      99.1 |              49 |
 | Conditie_1      | Rémy Fourneau               |            5 |         705 |          710 |      99.3 |              37 |
 | Conditie_1      | Alessio Patrillo            |            4 |         805 |          809 |      99.5 |              45 |
-| Conditie_1      | Alexander Naessens          |            3 |         800 |          803 |      99.6 |              62 |
 | Conditie_1      | Edwin Ponomarenko           |            2 |         750 |          752 |      99.7 |              60 |
 | Conditie_1      | Alexander Carlier           |            1 |         795 |          796 |      99.9 |              53 |
 | Conditie_1      | Leandro Dormaels Tollenaers |            0 |         180 |          180 |     100.0 |               6 |
-| Conditie_1      | Oliver Goudsmedt            |            0 |         690 |          690 |     100.0 |              57 |
 | Conditie_1      | Louise Thysen               |            0 |         625 |          625 |     100.0 |              52 |
 | Conditie_1      | Vince Ramaekers             |            0 |         740 |          740 |     100.0 |              41 |
 +-----------------+-----------------------------+--------------+-------------+--------------+-----------+-----------------+
@@ -42,16 +38,12 @@
 +-----------------+-----------------------------+-------------------+-----------------+-----------------+
 | condition_label | username                    | puzzles_completed | puzzles_started | puzzles_touched |
 +-----------------+-----------------------------+-------------------+-----------------+-----------------+
-| Conditie_1      | Daoud El Abdellaoui         |                 4 |               0 |               4 |
 | Conditie_1      | Edwin Ponomarenko           |                 4 |               0 |               4 |
-| Conditie_1      | Salematou Touré             |                 4 |               1 |               5 |
-| Conditie_1      | Alexander Naessens          |                 4 |               1 |               5 |
 | Conditie_1      | Célia Stauffer              |                 3 |               1 |               4 |
 | Conditie_1      | Joshea Nicole Cortes        |                 3 |               0 |               3 |
 | Conditie_1      | Ymke Claiysse               |                 3 |               1 |               4 |
 | Conditie_1      | Leia Kloos-Helsen           |                 3 |               2 |               5 |
 | Conditie_1      | Soraya Arhunde Oghosa       |                 3 |               1 |               4 |
-| Conditie_1      | Oliver Goudsmedt            |                 3 |               1 |               4 |
 | Conditie_1      | Louise Thysen               |                 3 |               1 |               4 |
 | Conditie_1      | Victoria Vingolato          |                 3 |               1 |               4 |
 | Conditie_1      | Alexander Carlier           |                 3 |               1 |               4 |
@@ -78,7 +70,7 @@
 +-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
 | condition_label | n_students | mean_unused_coins | mean_spent_coins | mean_pct_spent | students_who_spent_nothing | students_spent_half_or_more |
 +-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
-| Conditie_2      |         28 |              11.1 |            649.6 |           98.2 |                          1 |                          27 |
+| Conditie_2      |         26 |              11.9 |            671.3 |           98.2 |                          0 |                          26 |
 +-----------------+------------+-------------------+------------------+----------------+----------------------------+-----------------------------+
 
 +-----------------+-----------------------+--------------+-------------+--------------+-----------+-----------------+
@@ -107,7 +99,6 @@
 | Conditie_2      | Eva-Maria Iancu       |            4 |         570 |          574 |      99.3 |              49 |
 | Conditie_2      | Lyana Grobben         |            2 |         570 |          572 |      99.7 |              51 |
 | Conditie_2      | Joppe Stulens         |            2 |         800 |          802 |      99.8 |              53 |
-| Conditie_2      | Gaston Furniere       |            1 |         735 |          736 |      99.9 |              49 |
 | Conditie_2      | Lieze Stassen         |            1 |         775 |          776 |      99.9 |              50 |
 | Conditie_2      | Jaskirat Singh        |            0 |         620 |          620 |     100.0 |              36 |
 | Conditie_2      | Sores Köl             |            0 |         800 |          800 |     100.0 |              59 |
@@ -124,7 +115,6 @@
 | Conditie_2      | Lieze Stassen         |                 3 |               1 |               4 |
 | Conditie_2      | Sabrine Verschueren   |                 3 |               1 |               4 |
 | Conditie_2      | Henri Desmet          |                 3 |               1 |               4 |
-| Conditie_2      | Gaston Furniere       |                 3 |               1 |               4 |
 | Conditie_2      | Sores Köl             |                 3 |               2 |               5 |
 | Conditie_2      | Theo Herman           |                 3 |               1 |               4 |
 | Conditie_2      | Josephine Roelands    |                 3 |               1 |               4 |
