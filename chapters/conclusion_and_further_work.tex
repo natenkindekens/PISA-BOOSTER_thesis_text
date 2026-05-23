@@ -1,6 +1,7 @@
 % !TeX root = ../thesis.tex
 \chapter{Conclusion and Future Work}
 \label{chp:conclusions}
+This final chapter draws the thesis together. It first revisits the three research questions and the answers the work provides, then sets out the most promising directions for future development.
 
 \section{Conclusion}
 This thesis set out to address a clear gap in the digital tools available for arithmetic education in primary schools. Classroom exercise tools provide the engagement, adaptivity, and child-friendly design that keep children motivated, but lack the data tracking, experimental control and flexibility needed for scientific research. Research tools, on the other hand, provide the scientific infrastructure but lack the motivational qualities needed to keep children engaged across multiple classroom sessions. No existing tool covered both sides. RekenRangers was built to fill that gap.
@@ -9,7 +10,7 @@ Three research questions structured the work:
 
 \begin{enumerate}
 \item[\textbf{RQ1}] Can a single web-based platform satisfy both the exercise-tool properties and the research-tool properties identified in this thesis?
-\item[\textbf{RQ2}] Can the platform support a real multi-session classroom experiment with over 100 participants across multiple conditions, while producing complete and reliable data and keeping children engaged?
+\item[\textbf{RQ2}] Can the platform support a real multi-session classroom experiment with over 100 participants across multiple conditions, producing complete and reliable data, keeping children engaged, and running an adaptive difficulty system that performs as designed?
 \item[\textbf{RQ3}] How do children evaluate the engagement and user friendliness of the platform, and how do teachers and researchers evaluate the ease of setup?
 \end{enumerate}
 
@@ -24,12 +25,12 @@ RekenRangers brings the twelve properties together in a single tool, but not all
 \end{figure}
 
 \paragraph{Answer to RQ2}
-Yes. RekenRangers supported a multi-session classroom experiment with 107 participants across four conditions and four training days, deployed in seven primary schools. The platform collected 21,522 exercise records, the data was structured and exportable without preprocessing, and no data was lost despite a brief server downtime incident during the deployment. The engagement data shows that children spent 98.5\% of their earned coins voluntarily and that 99\% of participants completed at least one puzzle. The adaptive system differentiated between ability levels, but it did not reach its target accuracy, hit the rating ceiling for 14 children, and left a sizeable subgroup oscillating around the zone 3--4 boundary. These results demonstrate that RekenRangers can carry a real study from setup to data export and keep children engaged throughout, but they also point to clear calibration work that the adaptive system still needs.
+For the most part, yes. RekenRangers supported a multi-session classroom experiment with 107 participants across four conditions and four training days, deployed in seven primary schools. The platform collected 21,522 exercise records, the data was structured and exportable without preprocessing, and no data was lost despite a brief server downtime incident during the deployment. The engagement data shows that children spent 98.5\% of their earned coins voluntarily and that 99\% of participants completed at least one puzzle. The adaptive system differentiated between ability levels, but it did not reach its target accuracy, hit the rating ceiling for 14 children, and left a sizeable subgroup oscillating around the zone 3--4 boundary. These results demonstrate that RekenRangers can carry a real study from setup to data export and keep children engaged throughout, but they also point to clear calibration work that the adaptive system still needs.
 
 \paragraph{Answer to RQ3}
 The two researchers who used the tool, Eline T'joen and Kiara Willems, evaluated the ease of setup positively, particularly in comparison to their previous experience with OpenSesame and PsychoPy. The setup was manageable, the data was easy to retrieve, and the tool ran reliably during the classroom sessions. The most important concern, as discussed in Section~\ref{sec:limitations}, is that both researchers were closely involved in the development of the tool, which limits the generalisability of their feedback.
 
-From the children's side, the questionnaire results presented in Section~\ref{sec:interpretation-of-results} indicate that both engagement and user friendliness were evaluated positively, while the perceived match between the exercises and the children's ability level remains an area for improvement.
+From the children's side, the questionnaire results indicate that both engagement and user friendliness were evaluated positively, while the perceived match between the exercises and the children's ability level remains an area for improvement.
 
 \paragraph{Closing remarks}
 RekenRangers does not aim to replace either category of existing tools entirely. Its purpose is to offer an alternative for arithmetic studies that need to take place in real classroom settings, where engagement, ecological validity, and data collection have to coexist. The work presented here shows that this combination is achievable, while making the remaining trade-offs and open problems explicit. Whether RekenRangers becomes a genuine instrument for the educational research community depends on how those open problems are addressed. The next section outlines the most important directions for future work.
