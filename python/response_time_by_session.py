@@ -153,12 +153,12 @@ def make_figure(csv_files, title, out_filename):
 
 make_figure(
     csv_files=["data/group_Conditie_1.csv", "data/group_Conditie_2.csv"],
-    title="Average Response Time per Session and per Day — No Adaptivity (Conditions 1 & 2)",
+    title="Average Response Time per Session and per Day — No Adaptivity (Conditions A & B)",
     out_filename="response_time_by_session_no_adaptivity.png",
 )
 
 make_figure(
     csv_files=["data/group_Conditie_3.csv", "data/group_Conditie_4.csv"],
-    title="Average Response Time per Session and per Day — Adaptivity (Conditions 3 & 4)",
+    title="Average Response Time per Session and per Day — Adaptivity (Conditions C & D)",
     out_filename="response_time_by_session_adaptivity.png",
 )
