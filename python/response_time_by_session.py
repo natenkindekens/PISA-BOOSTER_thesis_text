@@ -3,6 +3,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 from pathlib import Path
 
+plt.rcParams.update({
+    "font.size": 13,
+    "axes.titlesize": 15,
+    "axes.labelsize": 13,
+    "xtick.labelsize": 12,
+    "ytick.labelsize": 12,
+    "legend.fontsize": 11,
+})
+
 # ============================================================
 # CONFIGURATION
 # ============================================================
@@ -87,7 +96,7 @@ def make_figure(csv_files, title, out_filename):
                 bar.get_x() + bar.get_width() / 2,
                 val + 0.05,
                 f"{val:.1f}s",
-                ha="center", va="bottom", fontsize=8, color="#333333",
+                ha="center", va="bottom", fontsize=11, color="#333333",
             )
 
     for day in range(1, NUM_DAYS + 1):
@@ -123,13 +132,13 @@ def make_figure(csv_files, title, out_filename):
             mid_x, 1.04,
             f"Day {day}",
             ha="center", va="bottom",
-            fontsize=10, fontweight="bold",
+            fontsize=13, fontweight="bold",
             color=DAY_COLORS[day - 1],
             transform=ax.transAxes,
         )
 
     ax.grid(axis="y", alpha=0.35, zorder=0)
-    ax.legend(loc="upper right", fontsize=9)
+    ax.legend(loc="upper right", fontsize=11)
 
     plt.tight_layout()
     out_path = OUTPUT_DIR / out_filename

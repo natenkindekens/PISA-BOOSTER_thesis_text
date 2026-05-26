@@ -3,6 +3,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 from pathlib import Path
 
+plt.rcParams.update({
+    "font.size": 13,
+    "axes.titlesize": 15,
+    "axes.labelsize": 13,
+    "xtick.labelsize": 12,
+    "ytick.labelsize": 12,
+    "legend.fontsize": 11,
+})
+
 # ============================================================
 # CONFIGURATION
 # ============================================================
@@ -54,7 +63,7 @@ def add_value_labels(ax, bars, values, fmt="{:.1%}"):
                 bar.get_x() + bar.get_width() / 2,
                 val + ax.get_ylim()[1] * 0.005,
                 fmt.format(val),
-                ha="center", va="bottom", fontsize=9, color="#333333",
+                ha="center", va="bottom", fontsize=11, color="#333333",
             )
 
 
@@ -85,7 +94,7 @@ ax.set_title(f"Average Accuracy per Session — Training Day {TRAINING_DAY}", pa
 ax.set_ylim(0, 1.1)
 ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _: f"{y:.0%}"))
 ax.grid(axis="y", alpha=0.35, zorder=0)
-ax.legend(loc="lower right", fontsize=9)
+ax.legend(loc="lower right", fontsize=11)
 plt.tight_layout()
 out = OUTPUT_DIR / f"accuracy_by_session_day{TRAINING_DAY}.png"
 plt.savefig(out, dpi=150)
@@ -108,7 +117,7 @@ for bar, val in zip(bars, session_rt.values):
             bar.get_x() + bar.get_width() / 2,
             val / 1000 + overall_rt / 1000 * 0.005,
             f"{val/1000:.2f}s",
-            ha="center", va="bottom", fontsize=9, color="#333333",
+            ha="center", va="bottom", fontsize=11, color="#333333",
         )
 
 ax.axhline(overall_rt / 1000, color=SESSION_COLOR, linewidth=2.5, linestyle="--",
@@ -120,7 +129,7 @@ ax.set_xlabel("Session")
 ax.set_ylabel("Average Response Time (s)")
 ax.set_title(f"Average Response Time per Session — Training Day {TRAINING_DAY}", pad=14)
 ax.grid(axis="y", alpha=0.35, zorder=0)
-ax.legend(loc="upper right", fontsize=9)
+ax.legend(loc="upper right", fontsize=11)
 plt.tight_layout()
 out = OUTPUT_DIR / f"rt_by_session_day{TRAINING_DAY}.png"
 plt.savefig(out, dpi=150)
@@ -143,7 +152,7 @@ for bar, val in zip(bars, session_rtc.values):
             bar.get_x() + bar.get_width() / 2,
             val / 1000 + overall_rtc / 1000 * 0.005,
             f"{val/1000:.2f}s",
-            ha="center", va="bottom", fontsize=9, color="#333333",
+            ha="center", va="bottom", fontsize=11, color="#333333",
         )
 
 ax.axhline(overall_rtc / 1000, color=SESSION_COLOR, linewidth=2.5, linestyle="--",
@@ -155,7 +164,7 @@ ax.set_xlabel("Session")
 ax.set_ylabel("Average Response Time — Correct Trials (s)")
 ax.set_title(f"Average Response Time (Correct Only) per Session — Training Day {TRAINING_DAY}", pad=14)
 ax.grid(axis="y", alpha=0.35, zorder=0)
-ax.legend(loc="upper right", fontsize=9)
+ax.legend(loc="upper right", fontsize=11)
 plt.tight_layout()
 out = OUTPUT_DIR / f"rt_correct_by_session_day{TRAINING_DAY}.png"
 plt.savefig(out, dpi=150)
