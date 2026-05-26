@@ -4,12 +4,12 @@ import random
 from pathlib import Path
 
 plt.rcParams.update({
-    "font.size": 13,
-    "axes.titlesize": 15,
-    "axes.labelsize": 13,
-    "xtick.labelsize": 12,
-    "ytick.labelsize": 12,
-    "legend.fontsize": 11,
+    "font.size": 16,
+    "axes.titlesize": 20,
+    "axes.labelsize": 17,
+    "xtick.labelsize": 15,
+    "ytick.labelsize": 15,
+    "legend.fontsize": 14,
 })
 
 # ============================================================

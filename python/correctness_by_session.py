@@ -4,12 +4,12 @@ import numpy as np
 from pathlib import Path
 
 plt.rcParams.update({
-    "font.size": 13,
-    "axes.titlesize": 15,
-    "axes.labelsize": 13,
-    "xtick.labelsize": 12,
-    "ytick.labelsize": 12,
-    "legend.fontsize": 11,
+    "font.size": 16,
+    "axes.titlesize": 20,
+    "axes.labelsize": 17,
+    "xtick.labelsize": 15,
+    "ytick.labelsize": 15,
+    "legend.fontsize": 14,
 })
 
 # ============================================================
@@ -93,7 +93,7 @@ def make_figure(csv_files, title, out_filename):
                 bar.get_x() + bar.get_width() / 2,
                 val + 0.005,
                 f"{val:.1%}",
-                ha="center", va="bottom", fontsize=11, color="#333333",
+                ha="center", va="bottom", fontsize=14, color="#333333",
             )
 
     for day in range(1, NUM_DAYS + 1):
@@ -122,19 +122,19 @@ def make_figure(csv_files, title, out_filename):
     ax.set_ylim(0, 1.05)
 
     for day in range(1, NUM_DAYS + 1):
-        mid_x = ((day - 1) * SESSIONS_PER_DAY + (SESSIONS_PER_DAY + 1) / 2 - 0.5) / (TOTAL_SESSIONS - 1)
+        mid_x = ((day - 1) * SESSIONS_PER_DAY + (SESSIONS_PER_DAY + 2.7) / 2 - 1.2) / (TOTAL_SESSIONS + 0.3)
         ax.text(
-            mid_x, 1.04,
+            mid_x, 1.02,
             f"Day {day}",
             ha="center", va="bottom",
-            fontsize=13, fontweight="bold",
+            fontsize=16, fontweight="bold",
             color=DAY_COLORS[day - 1],
             transform=ax.transAxes,
         )
 
     ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _: f"{y:.0%}"))
     ax.grid(axis="y", alpha=0.35, zorder=0)
-    ax.legend(loc="lower right", fontsize=11)
+    ax.legend(loc="lower right", fontsize=14)
 
     plt.tight_layout()
     out_path = OUTPUT_DIR / out_filename
